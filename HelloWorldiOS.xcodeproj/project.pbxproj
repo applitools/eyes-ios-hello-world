@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F92F5B952031C8AF003D0001 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5B942031C8AF003D0001 /* AppDelegate.m */; };
+		F92F5B982031C8AF003D0001 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5B972031C8AF003D0001 /* ViewController.m */; };
+		F92F5B9B2031C8AF003D0001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92F5B992031C8AF003D0001 /* Main.storyboard */; };
+		F92F5B9D2031C8AF003D0001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92F5B9C2031C8AF003D0001 /* Assets.xcassets */; };
+		F92F5BA02031C8AF003D0001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92F5B9E2031C8AF003D0001 /* LaunchScreen.storyboard */; };
+		F92F5BA32031C8AF003D0001 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BA22031C8AF003D0001 /* main.m */; };
+		F92F5BCB2031CE6B003D0001 /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BC32031CE6A003D0001 /* BEMCheckBox.m */; };
+		F92F5BCC2031CE6B003D0001 /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BC62031CE6A003D0001 /* BEMPathManager.m */; };
+		F92F5BCD2031CE6B003D0001 /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BC82031CE6B003D0001 /* BEMAnimationManager.m */; };
+		F92F5BCE2031CE6B003D0001 /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BCA2031CE6B003D0001 /* BEMCheckBoxGroup.m */; };
+		F92F5BD92032FBE0003D0001 /* InitialStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BD82032FBE0003D0001 /* InitialStrategy.m */; };
+		F92F5BDC2032FC18003D0001 /* DifferencesStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BDB2032FC18003D0001 /* DifferencesStrategy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F92F5B902031C8AF003D0001 /* HelloWorldiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorldiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F92F5B932031C8AF003D0001 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F92F5B942031C8AF003D0001 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F92F5B962031C8AF003D0001 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F92F5B972031C8AF003D0001 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F92F5B9A2031C8AF003D0001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F92F5B9C2031C8AF003D0001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F92F5B9F2031C8AF003D0001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F92F5BA12031C8AF003D0001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F92F5BA22031C8AF003D0001 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F92F5BC32031CE6A003D0001 /* BEMCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BEMCheckBox.m; path = HelloWorldiOS/Checkbox/BEMCheckBox.m; sourceTree = SOURCE_ROOT; };
+		F92F5BC42031CE6A003D0001 /* BEMPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BEMPathManager.h; path = HelloWorldiOS/Checkbox/BEMPathManager.h; sourceTree = SOURCE_ROOT; };
+		F92F5BC52031CE6A003D0001 /* BEMCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BEMCheckBox.h; path = HelloWorldiOS/Checkbox/BEMCheckBox.h; sourceTree = SOURCE_ROOT; };
+		F92F5BC62031CE6A003D0001 /* BEMPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BEMPathManager.m; path = HelloWorldiOS/Checkbox/BEMPathManager.m; sourceTree = SOURCE_ROOT; };
+		F92F5BC72031CE6B003D0001 /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BEMCheckBoxGroup.h; path = HelloWorldiOS/Checkbox/BEMCheckBoxGroup.h; sourceTree = SOURCE_ROOT; };
+		F92F5BC82031CE6B003D0001 /* BEMAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BEMAnimationManager.m; path = HelloWorldiOS/Checkbox/BEMAnimationManager.m; sourceTree = SOURCE_ROOT; };
+		F92F5BC92031CE6B003D0001 /* BEMAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BEMAnimationManager.h; path = HelloWorldiOS/Checkbox/BEMAnimationManager.h; sourceTree = SOURCE_ROOT; };
+		F92F5BCA2031CE6B003D0001 /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BEMCheckBoxGroup.m; path = HelloWorldiOS/Checkbox/BEMCheckBoxGroup.m; sourceTree = SOURCE_ROOT; };
+		F92F5BD02032EF9B003D0001 /* Strategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Strategy.h; sourceTree = "<group>"; };
+		F92F5BD72032FBE0003D0001 /* InitialStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitialStrategy.h; sourceTree = "<group>"; };
+		F92F5BD82032FBE0003D0001 /* InitialStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitialStrategy.m; sourceTree = "<group>"; };
+		F92F5BDA2032FC18003D0001 /* DifferencesStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DifferencesStrategy.h; sourceTree = "<group>"; };
+		F92F5BDB2032FC18003D0001 /* DifferencesStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DifferencesStrategy.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F92F5B8D2031C8AF003D0001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F92F5B872031C8AF003D0001 = {
+			isa = PBXGroup;
+			children = (
+				F92F5B922031C8AF003D0001 /* HelloWorldiOS */,
+				F92F5B912031C8AF003D0001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F92F5B912031C8AF003D0001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F92F5B902031C8AF003D0001 /* HelloWorldiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F92F5B922031C8AF003D0001 /* HelloWorldiOS */ = {
+			isa = PBXGroup;
+			children = (
+				F92F5BCF2032EEE1003D0001 /* Strategy */,
+				F92F5BA92031CD99003D0001 /* 3rd Party */,
+				F92F5B932031C8AF003D0001 /* AppDelegate.h */,
+				F92F5B942031C8AF003D0001 /* AppDelegate.m */,
+				F92F5B962031C8AF003D0001 /* ViewController.h */,
+				F92F5B972031C8AF003D0001 /* ViewController.m */,
+				F92F5B992031C8AF003D0001 /* Main.storyboard */,
+				F92F5B9C2031C8AF003D0001 /* Assets.xcassets */,
+				F92F5B9E2031C8AF003D0001 /* LaunchScreen.storyboard */,
+				F92F5BA12031C8AF003D0001 /* Info.plist */,
+				F92F5BA22031C8AF003D0001 /* main.m */,
+			);
+			path = HelloWorldiOS;
+			sourceTree = "<group>";
+		};
+		F92F5BA92031CD99003D0001 /* 3rd Party */ = {
+			isa = PBXGroup;
+			children = (
+				F92F5BC92031CE6B003D0001 /* BEMAnimationManager.h */,
+				F92F5BC82031CE6B003D0001 /* BEMAnimationManager.m */,
+				F92F5BC52031CE6A003D0001 /* BEMCheckBox.h */,
+				F92F5BC32031CE6A003D0001 /* BEMCheckBox.m */,
+				F92F5BC72031CE6B003D0001 /* BEMCheckBoxGroup.h */,
+				F92F5BCA2031CE6B003D0001 /* BEMCheckBoxGroup.m */,
+				F92F5BC42031CE6A003D0001 /* BEMPathManager.h */,
+				F92F5BC62031CE6A003D0001 /* BEMPathManager.m */,
+			);
+			path = "3rd Party";
+			sourceTree = "<group>";
+		};
+		F92F5BCF2032EEE1003D0001 /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				F92F5BD02032EF9B003D0001 /* Strategy.h */,
+				F92F5BD72032FBE0003D0001 /* InitialStrategy.h */,
+				F92F5BD82032FBE0003D0001 /* InitialStrategy.m */,
+				F92F5BDA2032FC18003D0001 /* DifferencesStrategy.h */,
+				F92F5BDB2032FC18003D0001 /* DifferencesStrategy.m */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F92F5B8F2031C8AF003D0001 /* HelloWorldiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F92F5BA62031C8AF003D0001 /* Build configuration list for PBXNativeTarget "HelloWorldiOS" */;
+			buildPhases = (
+				F92F5B8C2031C8AF003D0001 /* Sources */,
+				F92F5B8D2031C8AF003D0001 /* Frameworks */,
+				F92F5B8E2031C8AF003D0001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloWorldiOS;
+			productName = HelloWorldiOS;
+			productReference = F92F5B902031C8AF003D0001 /* HelloWorldiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F92F5B882031C8AF003D0001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Applitools;
+				TargetAttributes = {
+					F92F5B8F2031C8AF003D0001 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F92F5B8B2031C8AF003D0001 /* Build configuration list for PBXProject "HelloWorldiOS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F92F5B872031C8AF003D0001;
+			productRefGroup = F92F5B912031C8AF003D0001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F92F5B8F2031C8AF003D0001 /* HelloWorldiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F92F5B8E2031C8AF003D0001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F92F5BA02031C8AF003D0001 /* LaunchScreen.storyboard in Resources */,
+				F92F5B9D2031C8AF003D0001 /* Assets.xcassets in Resources */,
+				F92F5B9B2031C8AF003D0001 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F92F5B8C2031C8AF003D0001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F92F5BCC2031CE6B003D0001 /* BEMPathManager.m in Sources */,
+				F92F5B982031C8AF003D0001 /* ViewController.m in Sources */,
+				F92F5BDC2032FC18003D0001 /* DifferencesStrategy.m in Sources */,
+				F92F5BCE2031CE6B003D0001 /* BEMCheckBoxGroup.m in Sources */,
+				F92F5BD92032FBE0003D0001 /* InitialStrategy.m in Sources */,
+				F92F5BA32031C8AF003D0001 /* main.m in Sources */,
+				F92F5B952031C8AF003D0001 /* AppDelegate.m in Sources */,
+				F92F5BCB2031CE6B003D0001 /* BEMCheckBox.m in Sources */,
+				F92F5BCD2031CE6B003D0001 /* BEMAnimationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F92F5B992031C8AF003D0001 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F92F5B9A2031C8AF003D0001 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F92F5B9E2031C8AF003D0001 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F92F5B9F2031C8AF003D0001 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F92F5BA42031C8AF003D0001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F92F5BA52031C8AF003D0001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F92F5BA72031C8AF003D0001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HelloWorldiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Org.HelloWorldiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F92F5BA82031C8AF003D0001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HelloWorldiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Org.HelloWorldiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F92F5B8B2031C8AF003D0001 /* Build configuration list for PBXProject "HelloWorldiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F92F5BA42031C8AF003D0001 /* Debug */,
+				F92F5BA52031C8AF003D0001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F92F5BA62031C8AF003D0001 /* Build configuration list for PBXNativeTarget "HelloWorldiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F92F5BA72031C8AF003D0001 /* Debug */,
+				F92F5BA82031C8AF003D0001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F92F5B882031C8AF003D0001 /* Project object */;
+}
