@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <EyesXCUI/Eyes.h>
 
 @interface HelloWorldUITestsObjectiveC : XCTestCase
 
@@ -33,8 +34,29 @@
 }
 
 - (void)testExample {
-    // Use recording to get started writing UI tests.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    // Initialize the eyes SDK and set your private API key.
+    Eyes *eyes = [Eyes new];
+    eyes.apiKey = @"STRSWItF105WBCWET8wAdWLMXft9pSQzeEBotIcoYZHNI110";
+    
+    // Start the test.
+    [eyes openWithApplicationName:@"Hello World!" testName:@"My first Selenium Java test!!!!!!!!"];
+    
+    // Visual checkpoint #1.
+    [eyes checkWindowWithTag:@"Hello!"];
+    
+    // Click the "Click me!" button.
+    [[XCUIApplication new].buttons[@"Click me!"] tap];
+    
+    // Visual checkpoint #2.
+    [eyes checkWindowWithTag:@"Click!"];
+    
+    @try {
+        // End the test.
+        [eyes close];
+    } @finally {
+        // If the test was aborted before eyes.close was called, ends the test as aborted.
+        [eyes abortIfNotClosed];
+    }
 }
 
 @end

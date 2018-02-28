@@ -9,5 +9,6 @@
 #ifndef Bridging_Header_h
 #define Bridging_Header_h
 
+#import <EyesXCUI/EyesXCUI.h>
 
 #endif /* Bridging_Header_h */
