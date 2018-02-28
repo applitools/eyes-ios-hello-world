@@ -21,6 +21,8 @@
 		F92F5BDC2032FC18003D0001 /* DifferencesStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BDB2032FC18003D0001 /* DifferencesStrategy.m */; };
 		F937A2462046E83D002002E2 /* HelloWorldUITestsObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = F937A2452046E83D002002E2 /* HelloWorldUITestsObjectiveC.m */; };
 		F937A2542046E857002002E2 /* HelloWorldUITestsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937A2532046E857002002E2 /* HelloWorldUITestsSwift.swift */; };
+		F9789BF42047176C008BE00A /* EyesXCUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9789BF1204716B6008BE00A /* EyesXCUI.framework */; };
+		F9B9E61A204718C10019A8D0 /* EyesXCUI.framework in Resources */ = {isa = PBXBuildFile; fileRef = F9B9E619204718C00019A8D0 /* EyesXCUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,18 @@
 			remoteInfo = HelloWorldiOS;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F9D36028204711470020CC4C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F92F5B902031C8AF003D0001 /* HelloWorldiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorldiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +84,10 @@
 		F937A2512046E856002002E2 /* HelloWorldUITestsSwift.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldUITestsSwift.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F937A2532046E857002002E2 /* HelloWorldUITestsSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldUITestsSwift.swift; sourceTree = "<group>"; };
 		F937A2552046E857002002E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9789BF1204716B6008BE00A /* EyesXCUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EyesXCUI.framework; path = ../../../Desktop/EyesXCUI.framework; sourceTree = "<group>"; };
+		F9789BF5204717D6008BE00A /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		F9B9E619204718C00019A8D0 /* EyesXCUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EyesXCUI.framework; sourceTree = "<group>"; };
+		F9D36026204710CF0020CC4C /* EyesXCUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EyesXCUI.framework; path = ../../../Desktop/EyesXCUI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,19 +109,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9789BF42047176C008BE00A /* EyesXCUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F928BFA22047107500F96AC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9D36026204710CF0020CC4C /* EyesXCUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F92F5B872031C8AF003D0001 = {
 			isa = PBXGroup;
 			children = (
+				F9789BF1204716B6008BE00A /* EyesXCUI.framework */,
+				F9B9E619204718C00019A8D0 /* EyesXCUI.framework */,
 				F92F5B922031C8AF003D0001 /* HelloWorldiOS */,
 				F937A2442046E83D002002E2 /* HelloWorldUITestsObjectiveC */,
 				F937A2522046E857002002E2 /* HelloWorldUITestsSwift */,
 				F92F5B912031C8AF003D0001 /* Products */,
+				F928BFA22047107500F96AC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +206,7 @@
 			children = (
 				F937A2532046E857002002E2 /* HelloWorldUITestsSwift.swift */,
 				F937A2552046E857002002E2 /* Info.plist */,
+				F9789BF5204717D6008BE00A /* Bridging-Header.h */,
 			);
 			path = HelloWorldUITestsSwift;
 			sourceTree = "<group>";
@@ -207,6 +238,7 @@
 				F937A23F2046E83D002002E2 /* Sources */,
 				F937A2402046E83D002002E2 /* Frameworks */,
 				F937A2412046E83D002002E2 /* Resources */,
+				F9D36028204711470020CC4C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -304,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9B9E61A204718C10019A8D0 /* EyesXCUI.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +544,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = /Users/antonchuev/Desktop;
 				INFOPLIST_FILE = HelloWorldUITestsObjectiveC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Org.HelloWorldUITestsObjectiveC;
@@ -524,6 +558,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = /Users/antonchuev/Desktop;
 				INFOPLIST_FILE = HelloWorldUITestsObjectiveC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Org.HelloWorldUITestsObjectiveC;
@@ -537,11 +572,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = /Users/antonchuev/Desktop;
 				INFOPLIST_FILE = HelloWorldUITestsSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Org.HelloWorldUITestsSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorldUITestsSwift/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -553,10 +590,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = /Users/antonchuev/Desktop;
 				INFOPLIST_FILE = HelloWorldUITestsSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Org.HelloWorldUITestsSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorldUITestsSwift/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
