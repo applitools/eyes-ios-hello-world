@@ -42,7 +42,7 @@
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="bZ4-bc-ZLw"/>
                                         </connections>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make the number below random." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UkJ-6a-1uC">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make the number below random." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UkJ-6a-1uC">
                                         <rect key="frame" x="44" y="10" width="299" height="20.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="250" constant="40" id="wEn-sP-LLP"/>
@@ -81,7 +81,7 @@
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="ybc-sF-hwQ"/>
                                         </connections>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simulate additional differences." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CCG-0K-w0e">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simulate additional differences." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CCG-0K-w0e">
                                         <rect key="frame" x="44" y="10" width="299" height="20.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="250" constant="20.5" id="BEo-wD-c7J"/>
@@ -138,7 +138,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to your first Applitools Eyes test!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="40k-Dm-TCa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to your first Applitools Eyes test!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="40k-Dm-TCa">
                                 <rect key="frame" x="16" y="96" width="343" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="EQH-I9-ZE5"/>
