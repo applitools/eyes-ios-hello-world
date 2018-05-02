@@ -31,7 +31,7 @@
 - (void)testExample {
     // Initialize the eyes SDK and set your private API key.
     Eyes *eyes = [Eyes new];
-    eyes.apiKey = @"STRSWItF105WBCWET8wAdWLMXft9pSQzeEBotIcoYZHNI110";
+    eyes.apiKey = @"YOUR_API_KEY";
     
     // Start the test.
     [eyes openWithApplicationName:@"Hello World!" testName:@"My first test using EyesXCUI SDK!"];
