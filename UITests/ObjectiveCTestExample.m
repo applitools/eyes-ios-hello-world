@@ -1,19 +1,19 @@
 //
-//  HelloWorldUITestsObjectiveC.m
-//  HelloWorldUITestsObjectiveC
+//  ObjectiveCTestExample.m
+//  UITests
 //
-//  Created by Anton Chuev on 2/28/18.
+//  Created by Anton Chuev on 5/2/18.
 //  Copyright © 2018 Applitools. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
-#import <EyesXCUI/Eyes.h>
+#import <EyesXCUI/EyesXCUI.h>
 
-@interface HelloWorldUITestsObjectiveC : XCTestCase
+@interface ObjectiveCTestExample : XCTestCase
 
 @end
 
-@implementation HelloWorldUITestsObjectiveC
+@implementation ObjectiveCTestExample
 
 - (void)setUp {
     [super setUp];
@@ -28,21 +28,16 @@
     // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
 }
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
 - (void)testExample {
     // Initialize the eyes SDK and set your private API key.
     Eyes *eyes = [Eyes new];
     eyes.apiKey = @"STRSWItF105WBCWET8wAdWLMXft9pSQzeEBotIcoYZHNI110";
     
     // Start the test.
-    [eyes openWithApplicationName:@"Hello World!" testName:@"My first Selenium Java test!!!!!!!!"];
+    [eyes openWithApplicationName:@"Hello World!" testName:@"My first test using EyesXCUI SDK!"];
     
     // Visual checkpoint #1.
-    [eyes checkWindowWithTag:@"Hello!"];
+    [eyes checkWithTag:@"Hello!" andSettings:[[Target window] timeoutInSeconds:5]];
     
     // Click the "Click me!" button.
     [[XCUIApplication new].buttons[@"Click me!"] tap];
@@ -50,12 +45,11 @@
     // Visual checkpoint #2.
     [eyes checkWindowWithTag:@"Click!"];
     
-    @try {
-        // End the test.
-        [eyes close];
-    } @finally {
-        // If the test was aborted before eyes.close was called, ends the test as aborted.
+    NSError *error = nil;
+    [eyes close:&error];
+    if ( error ) {
         [eyes abortIfNotClosed];
+        XCTAssertNil(error);
     }
 }
 

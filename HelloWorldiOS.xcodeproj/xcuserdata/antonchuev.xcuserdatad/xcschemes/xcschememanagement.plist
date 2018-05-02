@@ -4,10 +4,43 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>HelloWorldUITestsObjectiveC.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>HelloWorldiOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>UITests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>F92F5B8F2031C8AF003D0001</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F937A2422046E83D002002E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F937A2502046E856002002E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F94D14E2209A19B100C69FCE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
