@@ -59,6 +59,16 @@
                ReferencedContainer = "container:HelloWorldiOS.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F9604DD6209B45FF00D2BA3B"
+               BuildableName = "UITestsObjectiveC.xctest"
+               BlueprintName = "UITestsObjectiveC"
+               ReferencedContainer = "container:HelloWorldiOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

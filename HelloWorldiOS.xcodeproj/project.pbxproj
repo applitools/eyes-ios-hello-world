@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B42F56A30E05070B022E9362 /* Pods_HelloWorldiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 487CE0B5CA040DB92157FAAB /* Pods_HelloWorldiOS.framework */; };
+		C7EBA2935756DDB443D82E32 /* Pods_HelloWorldiOS_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863791B00D76A4E0181CF267 /* Pods_HelloWorldiOS_UITests.framework */; };
 		F92F5B952031C8AF003D0001 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5B942031C8AF003D0001 /* AppDelegate.m */; };
 		F92F5B982031C8AF003D0001 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5B972031C8AF003D0001 /* ViewController.m */; };
 		F92F5B9B2031C8AF003D0001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92F5B992031C8AF003D0001 /* Main.storyboard */; };
@@ -20,9 +22,9 @@
 		F92F5BD92032FBE0003D0001 /* InitialStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BD82032FBE0003D0001 /* InitialStrategy.m */; };
 		F92F5BDC2032FC18003D0001 /* DifferencesStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BDB2032FC18003D0001 /* DifferencesStrategy.m */; };
 		F94D14F1209A1A1300C69FCE /* ObjectiveCTestExample.m in Sources */ = {isa = PBXBuildFile; fileRef = F94D14F0209A1A1300C69FCE /* ObjectiveCTestExample.m */; };
-		F94D14F3209A1A2B00C69FCE /* SwiftTestExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94D14F2209A1A2B00C69FCE /* SwiftTestExample.swift */; };
 		F94D14F7209A1B4B00C69FCE /* EyesXCUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94D14F6209A1B4B00C69FCE /* EyesXCUI.framework */; };
 		F94D14FB209A1C8900C69FCE /* EyesXCUI.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F94D14F6209A1B4B00C69FCE /* EyesXCUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F9E8FC96209B4E47005E9C8B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E8FC95209B4E47005E9C8B /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		487CE0B5CA040DB92157FAAB /* Pods_HelloWorldiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorldiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48F2C7BC92123F25E6F14E06 /* Pods-HelloWorldiOS-UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorldiOS-UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorldiOS-UITests/Pods-HelloWorldiOS-UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DE013247C60689C1019E25B /* Pods-HelloWorldiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorldiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorldiOS/Pods-HelloWorldiOS.release.xcconfig"; sourceTree = "<group>"; };
+		863791B00D76A4E0181CF267 /* Pods_HelloWorldiOS_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorldiOS_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE6BB1D1B30020C5E05E7FC /* Pods-HelloWorldiOS-UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorldiOS-UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorldiOS-UITests/Pods-HelloWorldiOS-UITests.release.xcconfig"; sourceTree = "<group>"; };
+		E32BA6C59D0F97B70A5058A2 /* Pods-HelloWorldiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorldiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloWorldiOS/Pods-HelloWorldiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		F92F5B902031C8AF003D0001 /* HelloWorldiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorldiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92F5B932031C8AF003D0001 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F92F5B942031C8AF003D0001 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,10 +82,9 @@
 		F92F5BDB2032FC18003D0001 /* DifferencesStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DifferencesStrategy.m; sourceTree = "<group>"; };
 		F94D14E3209A19B100C69FCE /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94D14E7209A19B100C69FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F94D14ED209A19D600C69FCE /* UITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		F94D14F0209A1A1300C69FCE /* ObjectiveCTestExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCTestExample.m; sourceTree = "<group>"; };
-		F94D14F2209A1A2B00C69FCE /* SwiftTestExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestExample.swift; sourceTree = "<group>"; };
 		F94D14F6209A1B4B00C69FCE /* EyesXCUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EyesXCUI.framework; path = UITests/Frameworks/EyesXCUI.framework; sourceTree = "<group>"; };
+		F9E8FC95209B4E47005E9C8B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9E8FC96209B4E47005E9C8B /* StoreKit.framework in Frameworks */,
+				B42F56A30E05070B022E9362 /* Pods_HelloWorldiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,16 +102,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				F94D14F7209A1B4B00C69FCE /* EyesXCUI.framework in Frameworks */,
+				C7EBA2935756DDB443D82E32 /* Pods_HelloWorldiOS_UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29721579D8CA63AE15368A8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E32BA6C59D0F97B70A5058A2 /* Pods-HelloWorldiOS.debug.xcconfig */,
+				6DE013247C60689C1019E25B /* Pods-HelloWorldiOS.release.xcconfig */,
+				48F2C7BC92123F25E6F14E06 /* Pods-HelloWorldiOS-UITests.debug.xcconfig */,
+				ADE6BB1D1B30020C5E05E7FC /* Pods-HelloWorldiOS-UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F928BFA22047107500F96AC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F9E8FC95209B4E47005E9C8B /* StoreKit.framework */,
 				F94D14F6209A1B4B00C69FCE /* EyesXCUI.framework */,
+				487CE0B5CA040DB92157FAAB /* Pods_HelloWorldiOS.framework */,
+				863791B00D76A4E0181CF267 /* Pods_HelloWorldiOS_UITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +138,7 @@
 				F94D14E4209A19B100C69FCE /* UITests */,
 				F92F5B912031C8AF003D0001 /* Products */,
 				F928BFA22047107500F96AC2 /* Frameworks */,
+				29721579D8CA63AE15368A8F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,9 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				F94D14E7209A19B100C69FCE /* Info.plist */,
-				F94D14ED209A19D600C69FCE /* UITests-Bridging-Header.h */,
 				F94D14F0209A1A1300C69FCE /* ObjectiveCTestExample.m */,
-				F94D14F2209A1A2B00C69FCE /* SwiftTestExample.swift */,
 			);
 			path = UITests;
 			sourceTree = "<group>";
@@ -189,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F92F5BA62031C8AF003D0001 /* Build configuration list for PBXNativeTarget "HelloWorldiOS" */;
 			buildPhases = (
+				C48B5EEAD4FC04BEE6C04B2B /* [CP] Check Pods Manifest.lock */,
 				F92F5B8C2031C8AF003D0001 /* Sources */,
 				F92F5B8D2031C8AF003D0001 /* Frameworks */,
 				F92F5B8E2031C8AF003D0001 /* Resources */,
@@ -206,10 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F94D14EA209A19B100C69FCE /* Build configuration list for PBXNativeTarget "UITests" */;
 			buildPhases = (
+				2220D2F643C969AF37C7E54A /* [CP] Check Pods Manifest.lock */,
 				F94D14DF209A19B100C69FCE /* Sources */,
 				F94D14E0209A19B100C69FCE /* Frameworks */,
 				F94D14E1209A19B100C69FCE /* Resources */,
 				F94D14F9209A1C5500C69FCE /* CopyFiles */,
+				53C2BB5999D8E85DC001DA96 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,12 +259,20 @@
 				TargetAttributes = {
 					F92F5B8F2031C8AF003D0001 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					F94D14E2209A19B100C69FCE = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = F92F5B8F2031C8AF003D0001;
 					};
 				};
@@ -282,6 +316,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2220D2F643C969AF37C7E54A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloWorldiOS-UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53C2BB5999D8E85DC001DA96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HelloWorldiOS-UITests/Pods-HelloWorldiOS-UITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AppCenterXCUITestExtensions/AppCenterXCUITestExtensions.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppCenterXCUITestExtensions.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloWorldiOS-UITests/Pods-HelloWorldiOS-UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C48B5EEAD4FC04BEE6C04B2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloWorldiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F92F5B8C2031C8AF003D0001 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -304,7 +395,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F94D14F1209A1A1300C69FCE /* ObjectiveCTestExample.m in Sources */,
-				F94D14F3209A1A2B00C69FCE /* SwiftTestExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,44 +534,62 @@
 		};
 		F92F5BA72031C8AF003D0001 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E32BA6C59D0F97B70A5058A2 /* Pods-HelloWorldiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = J63L6GWE82;
 				INFOPLIST_FILE = HelloWorldiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Org.HelloWorldiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.applitools.helloworld.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "14229562-388b-4f9e-9222-a2e863b183b8";
+				PROVISIONING_PROFILE_SPECIFIER = HelloWDevelop;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F92F5BA82031C8AF003D0001 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DE013247C60689C1019E25B /* Pods-HelloWorldiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = J63L6GWE82;
 				INFOPLIST_FILE = HelloWorldiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Org.HelloWorldiOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.applitools.helloworld.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b470e3a4-e8f3-4bc3-913f-b9d37f02c44c";
+				PROVISIONING_PROFILE_SPECIFIER = HelloW;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		F94D14EB209A19B100C69FCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48F2C7BC92123F25E6F14E06 /* Pods-HelloWorldiOS-UITests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Aleksandr Kachechka (J63L6GWE82)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = J63L6GWE82;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/UITests/Frameworks",
 				);
 				INFOPLIST_FILE = UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Org.UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.applitools.helloworld.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "UITests/UITests-Bridging-Header.h";
+				PROVISIONING_PROFILE = "14229562-388b-4f9e-9222-a2e863b183b8";
+				PROVISIONING_PROFILE_SPECIFIER = HelloWDevelop;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -491,18 +599,24 @@
 		};
 		F94D14EC209A19B100C69FCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADE6BB1D1B30020C5E05E7FC /* Pods-HelloWorldiOS-UITests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Aleksandr Kachechka (J63L6GWE82)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = J63L6GWE82;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/UITests/Frameworks",
 				);
 				INFOPLIST_FILE = UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Org.UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.applitools.helloworld.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "UITests/UITests-Bridging-Header.h";
+				PROVISIONING_PROFILE = "14229562-388b-4f9e-9222-a2e863b183b8";
+				PROVISIONING_PROFILE_SPECIFIER = HelloWDevelop;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = HelloWorldiOS;
