@@ -7,7 +7,6 @@ CocoaPods is a dependency manager, which automates and simplifies the process of
 $ gem install cocoapods
 
 
-Podfile
 To install all dependencies, those are specified in Podfile, run command:
 
 $ pod install
