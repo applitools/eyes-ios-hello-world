@@ -32,7 +32,7 @@ class SwiftTestExample: XCTestCase {
         // Initialize the eyes SDK and set your private API key.
         let eyes = Eyes()
         
-        eyes.apiKey = "YOUR_API_KEY"
+        eyes.apiKey = "iVcxz102wB7fwTuXt97dVJKNSyVoTgwfgeizsHGRKmqAuw110"
         
         // Start the test.
         eyes.open(withApplicationName: "Hello World!", testName: "My first test using EyesXCUI SDK!")
