@@ -62,6 +62,16 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F94D14E2209A19B100C69FCE"
+               BuildableName = "UITestss.xctest"
+               BlueprintName = "UITestss"
+               ReferencedContainer = "container:HelloWorldiOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F9512EC8237072AF00A4CA85"
                BuildableName = "UITests.xctest"
                BlueprintName = "UITests"
                ReferencedContainer = "container:HelloWorldiOS.xcodeproj">

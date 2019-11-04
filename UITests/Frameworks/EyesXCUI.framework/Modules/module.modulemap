@@ -1,6 +1,0 @@
-framework module EyesXCUI {
-  umbrella header "EyesXCUI.h"
-
-  export *
-  module * { export * }
-}
