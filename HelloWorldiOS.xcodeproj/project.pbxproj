@@ -21,6 +21,7 @@
 		F92F5BDC2032FC18003D0001 /* DifferencesStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BDB2032FC18003D0001 /* DifferencesStrategy.m */; };
 		F9512EDC2370745E00A4CA85 /* ObjectiveCTestExample.m in Sources */ = {isa = PBXBuildFile; fileRef = F9512EDA2370745E00A4CA85 /* ObjectiveCTestExample.m */; };
 		F9512EDD2370745E00A4CA85 /* SwiftTestExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9512EDB2370745E00A4CA85 /* SwiftTestExample.swift */; };
+		F9512EDF23707CF500A4CA85 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F9512EDE23707CF400A4CA85 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		F9512ED5237072D800A4CA85 /* UITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		F9512EDA2370745E00A4CA85 /* ObjectiveCTestExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCTestExample.m; sourceTree = "<group>"; };
 		F9512EDB2370745E00A4CA85 /* SwiftTestExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTestExample.swift; sourceTree = "<group>"; };
+		F9512EDE23707CF400A4CA85 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				F92F5B9E2031C8AF003D0001 /* LaunchScreen.storyboard */,
 				F92F5BA12031C8AF003D0001 /* Info.plist */,
 				F92F5BA22031C8AF003D0001 /* main.m */,
+				F9512EDE23707CF400A4CA85 /* README.md */,
 			);
 			path = HelloWorldiOS;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			files = (
 				F92F5BA02031C8AF003D0001 /* LaunchScreen.storyboard in Resources */,
 				F92F5B9D2031C8AF003D0001 /* Assets.xcassets in Resources */,
+				F9512EDF23707CF500A4CA85 /* README.md in Resources */,
 				F92F5B9B2031C8AF003D0001 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
