@@ -57,7 +57,6 @@
 		F92F5BD82032FBE0003D0001 /* InitialStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitialStrategy.m; sourceTree = "<group>"; };
 		F92F5BDA2032FC18003D0001 /* DifferencesStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DifferencesStrategy.h; sourceTree = "<group>"; };
 		F92F5BDB2032FC18003D0001 /* DifferencesStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DifferencesStrategy.m; sourceTree = "<group>"; };
-		F94D14F6209A1B4B00C69FCE /* EyesXCUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EyesXCUI.framework; path = UITests/Frameworks/EyesXCUI.framework; sourceTree = "<group>"; };
 		F9512EC9237072AF00A4CA85 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9512ECD237072AF00A4CA85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9512ED5237072D800A4CA85 /* UITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -86,7 +85,6 @@
 		F928BFA22047107500F96AC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F94D14F6209A1B4B00C69FCE /* EyesXCUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
