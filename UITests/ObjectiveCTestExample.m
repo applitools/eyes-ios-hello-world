@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import <EyesXCUI/EyesXCUI.h>
+@import EyesXCUI;
 
 @interface ObjectiveCTestExample : XCTestCase
 

@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import EyesXCUI
 
 class SwiftTestExample: XCTestCase {
         
