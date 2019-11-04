@@ -47,7 +47,7 @@ $ brew install carthage
 Or choose [another installation method](https://github.com/Carthage/Carthage#installing-carthage).
 
 ### Step 2: Create a Cartfile
-Create a `Cartfile` in the same directory, where your .xcodeproj or .xcworkspace locates, using command:
+Create a `Cartfile` in the same directory, where your `.xcodeproj` or `.xcworkspace` locates, using command:
 ```bash
 $ touch Cartfile
 ```
