@@ -1,5 +1,5 @@
 ## How To Get Started
-To make EyesXCUI SDK work, you should install it using [CocoaPods](http://cocoapods.org) or [Carthage](https://github.com/Carthage/Carthage).
+To make any of Applitools SDKs(**EyesXCUI**, **EyesEarlGrey** and **EyesImages**) work, you should install it using [CocoaPods](http://cocoapods.org) or [Carthage](https://github.com/Carthage/Carthage).
 
 ## Installation with CocoaPods
 ### Step 1: Install gem
@@ -17,7 +17,7 @@ $ pod init
 
 ### Step 3: Edit the Podfile
 Specify it in your `Podfile`:
-
+##### EyesXCUI
 ```ruby
 target 'APPLICATION_TARGET_NAME' do
   target 'UI_TESTING_TARGET_NAME' do
@@ -25,6 +25,23 @@ target 'APPLICATION_TARGET_NAME' do
   end
 end
 ```
+##### EyesEarlGrey
+```ruby
+target 'APPLICATION_TARGET_NAME' do
+  target 'UNIT_TESTING_TARGET_NAME' do
+    pod 'EyesEarlGrey'
+  end
+end
+```
+##### EyesEarlGrey
+```ruby
+target 'APPLICATION_TARGET_NAME' do
+  target 'UNIT_TESTING_TARGET_NAME' do
+  pod 'EyesImages'
+  end
+end
+```
+
 Save your `Podfile`.
 
 ### Step 4: Install dependencies
@@ -53,10 +70,23 @@ $ touch Cartfile
 ```
 ### Step 3: Edit the Cartfile
 Specify it in your `Cartfile`:
+
+##### EyesXCUI
 ```ogdl
 binary "https://applitools.bintray.com/iOS/CarthageEyesXCUI/VERSION/EyesXCUI-VERSION.json"
 ```
-Replace 'VERSION' with the number value of EyesXCUI SDK.
+
+##### EyesEarlGrey
+```ogdl
+binary "https://applitools.bintray.com/iOS/CarthageEyesEarlGrey/VERSION/EyesEarlGrey-VERSION.json"
+```
+
+##### EyesImages
+```ogdl
+binary "https://applitools.bintray.com/iOS/CarthageEyesImages/VERSION/EyesImages-VERSION.json"
+```
+
+Replace 'VERSION' with the number value of SDK.
 Save your `Cartfile`.
 
 ### Step 4: Install dependencies
@@ -66,16 +96,34 @@ $ carthage update
 ```
 
 ### Step 5: Set up environment:
-- Drag the built EyesXCUI.framework binary from Carthage/Build/<platform> into your application’s Xcode project.
+- Drag the built binary of Applitools's SDK, that you want to work with(EyesXCUI.framework, EyesEarlGrey.framework, EyesImages.framework), from Carthage/Build/<platform> into your application’s Xcode project.
 - On your application targets’ Build Phases settings tab, click the + icon and choose New Run Script Phase. Create a Run Script in which you specify your shell (ex: /bin/sh), add the following contents to the script area below the shell:
 ```bash
 /usr/local/bin/carthage copy-frameworks
 ```
 - Click the + under `Input Files` and add an entry for each framework:
+##### EyesXCUI
 ```bash
 $(SRCROOT)/Carthage/Build/iOS/EyesXCUI.framework
 ```
+##### EyesEarlGrey
+```bash
+$(SRCROOT)/Carthage/Build/iOS/EyesEarlGrey.framework
+```
+##### EyesImages
+```bash
+$(SRCROOT)/Carthage/Build/iOS/EyesImages.framework
+```
 - Click the + under `Output Files` and add an entry for each framework:
+##### EyesXCUI
 ```bash
 $(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/EyesXCUI.framework
+```
+##### EyesEarlGrey
+```bash
+$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/EyesEarlGrey.framework
+```
+##### EyesImages
+```bash
+$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/EyesImages.framework
 ```
