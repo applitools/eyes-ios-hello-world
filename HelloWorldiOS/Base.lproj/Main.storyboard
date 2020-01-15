@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="II1-X3-Rf2">
-                                <rect key="frame" x="16" y="52" width="343" height="40"/>
+                                <rect key="frame" x="16" y="32" width="343" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="uhA-eR-402"/>
                                 </constraints>
@@ -29,11 +26,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSR-KX-l9M">
-                                <rect key="frame" x="16" y="132" width="343" height="40"/>
+                                <rect key="frame" x="16" y="112" width="343" height="40"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7uT-k8-jBf" customClass="BEMCheckBox">
                                         <rect key="frame" x="0.0" y="5" width="30" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration" label="MakeRandomNumberCheckbox">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="7uT-k8-jBf" secondAttribute="height" multiplier="1:1" id="Flf-fx-ywG"/>
                                             <constraint firstAttribute="width" constant="30" id="gL9-3L-XHd"/>
@@ -63,11 +63,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRb-QG-h0z">
-                                <rect key="frame" x="16" y="177" width="343" height="40"/>
+                                <rect key="frame" x="16" y="157" width="343" height="40"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qaA-5T-MLw" customClass="BEMCheckBox">
                                         <rect key="frame" x="0.0" y="5" width="30" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration" label="SimulateDiffsCheckbox">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="tsY-RN-YrZ"/>
                                             <constraint firstAttribute="width" secondItem="qaA-5T-MLw" secondAttribute="height" multiplier="1:1" id="zOP-99-CZv"/>
@@ -102,7 +105,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNz-Ao-BEk">
-                                <rect key="frame" x="16" y="237" width="343" height="21"/>
+                                <rect key="frame" x="16" y="217" width="343" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Hft-Ci-u9i"/>
                                 </constraints>
@@ -111,7 +114,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCy-YS-acL">
-                                <rect key="frame" x="155" y="278" width="64" height="30"/>
+                                <rect key="frame" x="155.5" y="258" width="64" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="CQ9-J2-TTa"/>
@@ -123,14 +126,17 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lih-lF-7aR">
-                                <rect key="frame" x="131" y="351" width="113" height="65"/>
+                                <rect key="frame" x="131" y="331" width="113" height="65"/>
+                                <accessibility key="accessibilityConfiguration" label="ThumbUpOrBugImageView">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="113" id="AZT-vq-8Wj"/>
                                     <constraint firstAttribute="height" constant="65" id="UKk-rA-qaa"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You successfully clicked the button!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjF-cj-jOQ">
-                                <rect key="frame" x="16" y="316" width="343" height="21"/>
+                                <rect key="frame" x="16" y="296" width="343" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Brm-M7-8At"/>
                                 </constraints>
@@ -139,7 +145,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to your first Applitools Eyes test!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="40k-Dm-TCa">
-                                <rect key="frame" x="16" y="96" width="343" height="21"/>
+                                <rect key="frame" x="16" y="76" width="343" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="EQH-I9-ZE5"/>
                                 </constraints>
