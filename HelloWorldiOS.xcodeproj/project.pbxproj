@@ -19,13 +19,32 @@
 		F92F5BCE2031CE6B003D0001 /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BCA2031CE6B003D0001 /* BEMCheckBoxGroup.m */; };
 		F92F5BD92032FBE0003D0001 /* InitialStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BD82032FBE0003D0001 /* InitialStrategy.m */; };
 		F92F5BDC2032FC18003D0001 /* DifferencesStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BDB2032FC18003D0001 /* DifferencesStrategy.m */; };
-		F9512EDC2370745E00A4CA85 /* ObjectiveCTestExample.m in Sources */ = {isa = PBXBuildFile; fileRef = F9512EDA2370745E00A4CA85 /* ObjectiveCTestExample.m */; };
-		F9512EDD2370745E00A4CA85 /* SwiftTestExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9512EDB2370745E00A4CA85 /* SwiftTestExample.swift */; };
 		F9512EDF23707CF500A4CA85 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F9512EDE23707CF400A4CA85 /* README.md */; };
+		F9B862CC23CF38FF00571425 /* EyesXCUITestsObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B862CA23CF38FF00571425 /* EyesXCUITestsObjectiveC.m */; };
+		F9B862CD23CF38FF00571425 /* EyesXCUITestsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B862CB23CF38FF00571425 /* EyesXCUITestsSwift.swift */; };
+		F9B862CF23CF393B00571425 /* EyesEarlGreyTestsObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B862CE23CF393B00571425 /* EyesEarlGreyTestsObjectiveC.m */; };
+		F9B862D223CF394300571425 /* EyesEarlGreyTestsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B862D123CF394300571425 /* EyesEarlGreyTestsSwift.swift */; };
+		F9B862D423CF395B00571425 /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B862D323CF395B00571425 /* EarlGrey.swift */; };
+		F9B862D623CF398600571425 /* EyesImagesTestsObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B862D523CF398600571425 /* EyesImagesTestsObjectiveC.m */; };
+		F9B862D923CF398F00571425 /* EyesImagesTestsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B862D823CF398F00571425 /* EyesImagesTestsSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F9512ECE237072AF00A4CA85 /* PBXContainerItemProxy */ = {
+		F9B862A423CF381100571425 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F92F5B882031C8AF003D0001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F92F5B8F2031C8AF003D0001;
+			remoteInfo = HelloWorldiOS;
+		};
+		F9B862B223CF382700571425 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F92F5B882031C8AF003D0001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F92F5B8F2031C8AF003D0001;
+			remoteInfo = HelloWorldiOS;
+		};
+		F9B862C023CF383B00571425 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F92F5B882031C8AF003D0001 /* Project object */;
 			proxyType = 1;
@@ -58,12 +77,23 @@
 		F92F5BD82032FBE0003D0001 /* InitialStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitialStrategy.m; sourceTree = "<group>"; };
 		F92F5BDA2032FC18003D0001 /* DifferencesStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DifferencesStrategy.h; sourceTree = "<group>"; };
 		F92F5BDB2032FC18003D0001 /* DifferencesStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DifferencesStrategy.m; sourceTree = "<group>"; };
-		F9512EC9237072AF00A4CA85 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9512ECD237072AF00A4CA85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9512ED5237072D800A4CA85 /* UITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITests-Bridging-Header.h"; sourceTree = "<group>"; };
-		F9512EDA2370745E00A4CA85 /* ObjectiveCTestExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCTestExample.m; sourceTree = "<group>"; };
-		F9512EDB2370745E00A4CA85 /* SwiftTestExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTestExample.swift; sourceTree = "<group>"; };
 		F9512EDE23707CF400A4CA85 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		F9B8629F23CF381100571425 /* EyesXCUITests(UITests).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EyesXCUITests(UITests).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9B862A323CF381100571425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9B862AD23CF382700571425 /* EyesEarlGreyTests(UnitTests).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EyesEarlGreyTests(UnitTests).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9B862B123CF382700571425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9B862BB23CF383B00571425 /* EyesImagesTests(UnitTests).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EyesImagesTests(UnitTests).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9B862BF23CF383B00571425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9B862C723CF38BC00571425 /* EyesXCUITests(UITests)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyesXCUITests(UITests)-Bridging-Header.h"; sourceTree = "<group>"; };
+		F9B862CA23CF38FF00571425 /* EyesXCUITestsObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyesXCUITestsObjectiveC.m; sourceTree = "<group>"; };
+		F9B862CB23CF38FF00571425 /* EyesXCUITestsSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyesXCUITestsSwift.swift; sourceTree = "<group>"; };
+		F9B862CE23CF393B00571425 /* EyesEarlGreyTestsObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyesEarlGreyTestsObjectiveC.m; sourceTree = "<group>"; };
+		F9B862D023CF394200571425 /* EyesEarlGreyTests(UnitTests)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyesEarlGreyTests(UnitTests)-Bridging-Header.h"; sourceTree = "<group>"; };
+		F9B862D123CF394300571425 /* EyesEarlGreyTestsSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyesEarlGreyTestsSwift.swift; sourceTree = "<group>"; };
+		F9B862D323CF395B00571425 /* EarlGrey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
+		F9B862D523CF398600571425 /* EyesImagesTestsObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyesImagesTestsObjectiveC.m; sourceTree = "<group>"; };
+		F9B862D723CF398E00571425 /* EyesImagesTests(UnitTests)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyesImagesTests(UnitTests)-Bridging-Header.h"; sourceTree = "<group>"; };
+		F9B862D823CF398F00571425 /* EyesImagesTestsSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyesImagesTestsSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +104,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9512EC6237072AF00A4CA85 /* Frameworks */ = {
+		F9B8629C23CF381100571425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9B862AA23CF382700571425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9B862B823CF383B00571425 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -95,7 +139,9 @@
 			isa = PBXGroup;
 			children = (
 				F92F5B922031C8AF003D0001 /* HelloWorldiOS */,
-				F9512ECA237072AF00A4CA85 /* UITests */,
+				F9B862A023CF381100571425 /* EyesXCUITests(UITests) */,
+				F9B862AE23CF382700571425 /* EyesEarlGreyTests(UnitTests) */,
+				F9B862BC23CF383B00571425 /* EyesImagesTests(UnitTests) */,
 				F92F5B912031C8AF003D0001 /* Products */,
 				F928BFA22047107500F96AC2 /* Frameworks */,
 			);
@@ -105,7 +151,9 @@
 			isa = PBXGroup;
 			children = (
 				F92F5B902031C8AF003D0001 /* HelloWorldiOS.app */,
-				F9512EC9237072AF00A4CA85 /* UITests.xctest */,
+				F9B8629F23CF381100571425 /* EyesXCUITests(UITests).xctest */,
+				F9B862AD23CF382700571425 /* EyesEarlGreyTests(UnitTests).xctest */,
+				F9B862BB23CF383B00571425 /* EyesImagesTests(UnitTests).xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,15 +204,38 @@
 			path = Strategy;
 			sourceTree = "<group>";
 		};
-		F9512ECA237072AF00A4CA85 /* UITests */ = {
+		F9B862A023CF381100571425 /* EyesXCUITests(UITests) */ = {
 			isa = PBXGroup;
 			children = (
-				F9512EDA2370745E00A4CA85 /* ObjectiveCTestExample.m */,
-				F9512EDB2370745E00A4CA85 /* SwiftTestExample.swift */,
-				F9512ECD237072AF00A4CA85 /* Info.plist */,
-				F9512ED5237072D800A4CA85 /* UITests-Bridging-Header.h */,
+				F9B862CA23CF38FF00571425 /* EyesXCUITestsObjectiveC.m */,
+				F9B862CB23CF38FF00571425 /* EyesXCUITestsSwift.swift */,
+				F9B862A323CF381100571425 /* Info.plist */,
+				F9B862C723CF38BC00571425 /* EyesXCUITests(UITests)-Bridging-Header.h */,
 			);
-			path = UITests;
+			path = "EyesXCUITests(UITests)";
+			sourceTree = "<group>";
+		};
+		F9B862AE23CF382700571425 /* EyesEarlGreyTests(UnitTests) */ = {
+			isa = PBXGroup;
+			children = (
+				F9B862CE23CF393B00571425 /* EyesEarlGreyTestsObjectiveC.m */,
+				F9B862D123CF394300571425 /* EyesEarlGreyTestsSwift.swift */,
+				F9B862D323CF395B00571425 /* EarlGrey.swift */,
+				F9B862B123CF382700571425 /* Info.plist */,
+				F9B862D023CF394200571425 /* EyesEarlGreyTests(UnitTests)-Bridging-Header.h */,
+			);
+			path = "EyesEarlGreyTests(UnitTests)";
+			sourceTree = "<group>";
+		};
+		F9B862BC23CF383B00571425 /* EyesImagesTests(UnitTests) */ = {
+			isa = PBXGroup;
+			children = (
+				F9B862D523CF398600571425 /* EyesImagesTestsObjectiveC.m */,
+				F9B862D823CF398F00571425 /* EyesImagesTestsSwift.swift */,
+				F9B862BF23CF383B00571425 /* Info.plist */,
+				F9B862D723CF398E00571425 /* EyesImagesTests(UnitTests)-Bridging-Header.h */,
+			);
+			path = "EyesImagesTests(UnitTests)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,23 +258,59 @@
 			productReference = F92F5B902031C8AF003D0001 /* HelloWorldiOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F9512EC8237072AF00A4CA85 /* UITests */ = {
+		F9B8629E23CF381100571425 /* EyesXCUITests(UITests) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F9512ED0237072AF00A4CA85 /* Build configuration list for PBXNativeTarget "UITests" */;
+			buildConfigurationList = F9B862A623CF381100571425 /* Build configuration list for PBXNativeTarget "EyesXCUITests(UITests)" */;
 			buildPhases = (
-				F9512EC5237072AF00A4CA85 /* Sources */,
-				F9512EC6237072AF00A4CA85 /* Frameworks */,
-				F9512EC7237072AF00A4CA85 /* Resources */,
+				F9B8629B23CF381100571425 /* Sources */,
+				F9B8629C23CF381100571425 /* Frameworks */,
+				F9B8629D23CF381100571425 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F9512ECF237072AF00A4CA85 /* PBXTargetDependency */,
+				F9B862A523CF381100571425 /* PBXTargetDependency */,
 			);
-			name = UITests;
-			productName = UITests;
-			productReference = F9512EC9237072AF00A4CA85 /* UITests.xctest */;
+			name = "EyesXCUITests(UITests)";
+			productName = "EyesXCUITests(UITests)";
+			productReference = F9B8629F23CF381100571425 /* EyesXCUITests(UITests).xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F9B862AC23CF382700571425 /* EyesEarlGreyTests(UnitTests) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9B862B423CF382700571425 /* Build configuration list for PBXNativeTarget "EyesEarlGreyTests(UnitTests)" */;
+			buildPhases = (
+				F9B862A923CF382700571425 /* Sources */,
+				F9B862AA23CF382700571425 /* Frameworks */,
+				F9B862AB23CF382700571425 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9B862B323CF382700571425 /* PBXTargetDependency */,
+			);
+			name = "EyesEarlGreyTests(UnitTests)";
+			productName = "EyesEarlGreyTests(UnitTests)";
+			productReference = F9B862AD23CF382700571425 /* EyesEarlGreyTests(UnitTests).xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9B862BA23CF383B00571425 /* EyesImagesTests(UnitTests) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9B862C223CF383B00571425 /* Build configuration list for PBXNativeTarget "EyesImagesTests(UnitTests)" */;
+			buildPhases = (
+				F9B862B723CF383B00571425 /* Sources */,
+				F9B862B823CF383B00571425 /* Frameworks */,
+				F9B862B923CF383B00571425 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9B862C123CF383B00571425 /* PBXTargetDependency */,
+			);
+			name = "EyesImagesTests(UnitTests)";
+			productName = "EyesImagesTests(UnitTests)";
+			productReference = F9B862BB23CF383B00571425 /* EyesImagesTests(UnitTests).xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -211,7 +318,7 @@
 		F92F5B882031C8AF003D0001 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = Applitools;
 				TargetAttributes = {
@@ -219,9 +326,21 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
-					F9512EC8237072AF00A4CA85 = {
-						CreatedOnToolsVersion = 11.0;
-						LastSwiftMigration = 1100;
+					F9B8629E23CF381100571425 = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F92F5B8F2031C8AF003D0001;
+					};
+					F9B862AC23CF382700571425 = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F92F5B8F2031C8AF003D0001;
+					};
+					F9B862BA23CF383B00571425 = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F92F5B8F2031C8AF003D0001;
 					};
@@ -241,7 +360,9 @@
 			projectRoot = "";
 			targets = (
 				F92F5B8F2031C8AF003D0001 /* HelloWorldiOS */,
-				F9512EC8237072AF00A4CA85 /* UITests */,
+				F9B8629E23CF381100571425 /* EyesXCUITests(UITests) */,
+				F9B862AC23CF382700571425 /* EyesEarlGreyTests(UnitTests) */,
+				F9B862BA23CF383B00571425 /* EyesImagesTests(UnitTests) */,
 			);
 		};
 /* End PBXProject section */
@@ -258,7 +379,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9512EC7237072AF00A4CA85 /* Resources */ = {
+		F9B8629D23CF381100571425 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9B862AB23CF382700571425 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9B862B923CF383B00571425 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,22 +419,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9512EC5237072AF00A4CA85 /* Sources */ = {
+		F9B8629B23CF381100571425 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9512EDD2370745E00A4CA85 /* SwiftTestExample.swift in Sources */,
-				F9512EDC2370745E00A4CA85 /* ObjectiveCTestExample.m in Sources */,
+				F9B862CD23CF38FF00571425 /* EyesXCUITestsSwift.swift in Sources */,
+				F9B862CC23CF38FF00571425 /* EyesXCUITestsObjectiveC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9B862A923CF382700571425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9B862D223CF394300571425 /* EyesEarlGreyTestsSwift.swift in Sources */,
+				F9B862CF23CF393B00571425 /* EyesEarlGreyTestsObjectiveC.m in Sources */,
+				F9B862D423CF395B00571425 /* EarlGrey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9B862B723CF383B00571425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9B862D623CF398600571425 /* EyesImagesTestsObjectiveC.m in Sources */,
+				F9B862D923CF398F00571425 /* EyesImagesTestsSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F9512ECF237072AF00A4CA85 /* PBXTargetDependency */ = {
+		F9B862A523CF381100571425 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F92F5B8F2031C8AF003D0001 /* HelloWorldiOS */;
-			targetProxy = F9512ECE237072AF00A4CA85 /* PBXContainerItemProxy */;
+			targetProxy = F9B862A423CF381100571425 /* PBXContainerItemProxy */;
+		};
+		F9B862B323CF382700571425 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F92F5B8F2031C8AF003D0001 /* HelloWorldiOS */;
+			targetProxy = F9B862B223CF382700571425 /* PBXContainerItemProxy */;
+		};
+		F9B862C123CF383B00571425 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F92F5B8F2031C8AF003D0001 /* HelloWorldiOS */;
+			targetProxy = F9B862C023CF383B00571425 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -458,20 +622,20 @@
 			};
 			name = Release;
 		};
-		F9512ED1237072AF00A4CA85 /* Debug */ = {
+		F9B862A723CF381100571425 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = UITests/Info.plist;
+				INFOPLIST_FILE = "EyesXCUITests(UITests)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = Applitools.UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "Applitools.EyesXCUITests-UITests-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "UITests/UITests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "EyesXCUITests(UITests)/EyesXCUITests(UITests)-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -479,22 +643,106 @@
 			};
 			name = Debug;
 		};
-		F9512ED2237072AF00A4CA85 /* Release */ = {
+		F9B862A823CF381100571425 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = UITests/Info.plist;
+				INFOPLIST_FILE = "EyesXCUITests(UITests)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = Applitools.UITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "Applitools.EyesXCUITests-UITests-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "UITests/UITests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "EyesXCUITests(UITests)/EyesXCUITests(UITests)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = HelloWorldiOS;
+			};
+			name = Release;
+		};
+		F9B862B523CF382700571425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "EyesEarlGreyTests(UnitTests)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "Applitools.EyesEarlGreyTests-UnitTests-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EyesEarlGreyTests(UnitTests)/EyesEarlGreyTests(UnitTests)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWorldiOS.app/HelloWorldiOS";
+			};
+			name = Debug;
+		};
+		F9B862B623CF382700571425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "EyesEarlGreyTests(UnitTests)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "Applitools.EyesEarlGreyTests-UnitTests-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EyesEarlGreyTests(UnitTests)/EyesEarlGreyTests(UnitTests)-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWorldiOS.app/HelloWorldiOS";
+			};
+			name = Release;
+		};
+		F9B862C323CF383B00571425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "EyesImagesTests(UnitTests)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "Applitools.EyesImagesTests-UnitTests-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EyesImagesTests(UnitTests)/EyesImagesTests(UnitTests)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWorldiOS.app/HelloWorldiOS";
+			};
+			name = Debug;
+		};
+		F9B862C423CF383B00571425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "EyesImagesTests(UnitTests)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "Applitools.EyesImagesTests-UnitTests-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EyesImagesTests(UnitTests)/EyesImagesTests(UnitTests)-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWorldiOS.app/HelloWorldiOS";
 			};
 			name = Release;
 		};
@@ -519,11 +767,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F9512ED0237072AF00A4CA85 /* Build configuration list for PBXNativeTarget "UITests" */ = {
+		F9B862A623CF381100571425 /* Build configuration list for PBXNativeTarget "EyesXCUITests(UITests)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F9512ED1237072AF00A4CA85 /* Debug */,
-				F9512ED2237072AF00A4CA85 /* Release */,
+				F9B862A723CF381100571425 /* Debug */,
+				F9B862A823CF381100571425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9B862B423CF382700571425 /* Build configuration list for PBXNativeTarget "EyesEarlGreyTests(UnitTests)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9B862B523CF382700571425 /* Debug */,
+				F9B862B623CF382700571425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9B862C223CF383B00571425 /* Build configuration list for PBXNativeTarget "EyesImagesTests(UnitTests)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9B862C323CF383B00571425 /* Debug */,
+				F9B862C423CF383B00571425 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

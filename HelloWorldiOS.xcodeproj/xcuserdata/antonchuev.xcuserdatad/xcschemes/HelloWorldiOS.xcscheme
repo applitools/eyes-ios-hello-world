@@ -77,6 +77,56 @@
                ReferencedContainer = "container:HelloWorldiOS.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F963BD812371BF4500E6EA5D"
+               BuildableName = "EyesImagesTests.xctest"
+               BlueprintName = "EyesImagesTests"
+               ReferencedContainer = "container:HelloWorldiOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F982B8C823CDD9D100E36263"
+               BuildableName = "UnitTests.xctest"
+               BlueprintName = "UnitTests"
+               ReferencedContainer = "container:HelloWorldiOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F9B8629E23CF381100571425"
+               BuildableName = "EyesXCUITests(UITests).xctest"
+               BlueprintName = "EyesXCUITests(UITests)"
+               ReferencedContainer = "container:HelloWorldiOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F9B862AC23CF382700571425"
+               BuildableName = "EyesEarlGreyTests(UnitTests).xctest"
+               BlueprintName = "EyesEarlGreyTests(UnitTests)"
+               ReferencedContainer = "container:HelloWorldiOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F9B862BA23CF383B00571425"
+               BuildableName = "EyesImagesTests(UnitTests).xctest"
+               BlueprintName = "EyesImagesTests(UnitTests)"
+               ReferencedContainer = "container:HelloWorldiOS.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
