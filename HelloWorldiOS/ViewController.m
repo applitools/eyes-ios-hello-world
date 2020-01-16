@@ -1,10 +1,4 @@
-//
-//  ViewController.m
-//  HelloWorldiOS
-//
-//  Created by Anton Chuev on 2/12/18.
-//  Copyright © 2018 Applitools. All rights reserved.
-//
+// Licensed under the Applitools SDK License, which can be found here: https://www.applitools.com/eula/sdk
 
 #import "ViewController.h"
 #import "BEMCheckBox.h"

@@ -1,10 +1,4 @@
-//
-//  EyesEarlGreyTestsObjectiveC.m
-//  UnitTests
-//
-//  Created by Anton Chuev on 14.01.2020.
-//  Copyright © 2020 Applitools. All rights reserved.
-//
+// Licensed under the Applitools SDK License, which can be found here: https://www.applitools.com/eula/sdk
 
 #import <XCTest/XCTest.h>
 @import EyesEarlGrey;
