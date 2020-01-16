@@ -130,21 +130,19 @@ $(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/EyesImages.framework
 
 ## Manual installation
 1. Drag-and-drop EyesXCUI.framework to UI test target.
-![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step 1-1.png)
-
-![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step 1-2.png)
+![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step1-1.png)
+![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step1-2.png)
 
 2. Open project navigator, select UI tests target(where you want to work with EyesXCUI SDK). Select **Build Phases** section.
-![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step 2.png)
+![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step2.png)
 
 3. Select **Copy Files** phase(or create if it does not exist by tapping **+** button on the top left corner of Project Navigator).
-![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step 3-1.png)
-
-![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step 3-2.png)
+![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step3-1.png)
+![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step3-2.png)
 
 4. Tap **+** button on **Copy Files** phase, find and add EyesXCUI.framework.
-![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step 4-1.png)
+![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step4-1.png)
+![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step4-2.png)
 
-![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step 4-2.png)
 5. Change **Destination** value to *Frameworks* on **Copy Files** phase.
-![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step 5.png)
+![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step5.png)
