@@ -18,6 +18,7 @@ static int SimulateDifferencesCheckboxTag = 0xBBBB;
 @property (weak, nonatomic) IBOutlet UILabel *randomNumberLabel;
 @property (weak, nonatomic) IBOutlet UIButton *clickMeButton;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *clickMeButtonCenterXLayout;
+@property (weak, nonatomic) IBOutlet UIView *bottomContainer;
 @property (weak, nonatomic) IBOutlet UILabel *buttonClickedLable;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
@@ -47,6 +48,10 @@ static int SimulateDifferencesCheckboxTag = 0xBBBB;
     [super viewWillAppear:animated];
     self.clickMeButton.layer.cornerRadius = 5.f;
     [self updateContentWithStrategy:self.currentStrategy];
+    
+    self.buttonClickedLable.accessibilityIdentifier = @"BottomLabel";
+    self.imageView.accessibilityIdentifier = @"BottomImage";
+    self.bottomContainer.accessibilityIdentifier = @"BottomContainer";
 }
 
 - (void)showClickMeContent:(BOOL)shouldShow {
