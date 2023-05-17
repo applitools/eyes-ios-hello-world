@@ -24,7 +24,7 @@ class EyesImagesTestsSwift: XCTestCase {
             eyes.open(withApplicationName: "Applitools site", testName: "iOS Screenshot test!")
 
             // Load page image and validate.
-            guard let url: URL = URL.init(string: "https://applitools.com/tutorials/applitools.jpg") else {
+            guard let url: URL = URL.init(string: "https://applitools.com/blog/wp-content/uploads/2013/11/app-is-live-nov-2013.png") else {
                 return
             }
             guard let imageData: Data = try? Data(contentsOf: url) else {

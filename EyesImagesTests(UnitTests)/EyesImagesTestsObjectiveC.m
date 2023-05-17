@@ -25,7 +25,7 @@
     [eyes openWithApplicationName:@"Applitools site" testName:@"iOS Screnshot test!"];
     
     // Load page image and validate.
-    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://applitools.com/tutorials/applitools.jpg"]];
+    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://applitools.com/blog/wp-content/uploads/2013/11/app-is-live-nov-2013.png"]];
     UIImage *image = [UIImage imageWithData:imageData];
     
     // Visual validation.
