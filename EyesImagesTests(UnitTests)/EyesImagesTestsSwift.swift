@@ -14,43 +14,32 @@ class EyesImagesTestsSwift: XCTestCase {
     }
 
     func testExample() {
-        let eyes: Eyes = Eyes()
+        let eyes = Eyes()
 
         // Initialize the eyes SDK and set your private API key.
         eyes.apiKey = "YOUR_API_KEY"
 
-        do {
-            // Start the test
-            eyes.open(withApplicationName: "Applitools site", testName: "iOS Screenshot test!")
+        // Start the test
+        eyes.open(withApplicationName: "Applitools site", testName: "iOS Screenshot test!")
 
-            // Load page image and validate.
-            guard let url: URL = URL.init(string: "https://applitools.com/blog/wp-content/uploads/2013/11/app-is-live-nov-2013.png") else {
-                return
-            }
-            guard let imageData: Data = try? Data(contentsOf: url) else {
-                return
-            }
-
-            guard let image: UIImage = UIImage(data: imageData) else {
-                return
-            }
-
-            // Visual validation.
-            eyes.check(withTag: "Applitools!", andSettings: Target.image(image))
-
-            // End visual UI testing.
-            do {
-                try eyes.close()
-            } catch {
-                eyes.abortIfNotClosed()
-            }
+        // Load page image and validate.
+        guard
+            let url = URL(string: "https://applitools.com/blog/wp-content/uploads/2013/11/app-is-live-nov-2013.png"),
+            let imageData = try? Data(contentsOf: url),
+            let image = UIImage(data: imageData)
+        else {
+            eyes.abortIfNotClosed()
+            return
         }
-    }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        // Visual validation.
+        eyes.check(withTag: "Applitools!", andSettings: Target.image(image))
+
+        // End visual UI testing.
+        do {
+            try eyes.close()
+        } catch {
+            eyes.abortIfNotClosed()
         }
     }
 
