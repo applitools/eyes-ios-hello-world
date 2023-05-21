@@ -17,12 +17,12 @@ class EyesImagesTestsSwift: XCTestCase {
         let eyes = Eyes()
 
         // Initialize the eyes SDK and set your private API key.
-        eyes.apiKey = "YOUR_API_KEY"
+        eyes.apiKey = <#YOUR_API_KEY#>
 
         // Start the test
         eyes.open(withApplicationName: "Applitools site", testName: "iOS Screenshot test!")
 
-        // Load page image and validate.
+        // Load image
         guard
             let url = URL(string: "https://applitools.com/blog/wp-content/uploads/2013/11/app-is-live-nov-2013.png"),
             let imageData = try? Data(contentsOf: url),
@@ -33,9 +33,9 @@ class EyesImagesTestsSwift: XCTestCase {
         }
 
         // Visual validation.
-        eyes.check(withTag: "Applitools!", andSettings: Target.image(image))
+        eyes.check(image, tag: "Applitools!")
 
-        // End visual UI testing.
+        // End visual testing.
         do {
             try eyes.close()
         } catch {
