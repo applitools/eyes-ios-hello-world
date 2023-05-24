@@ -22,22 +22,12 @@
 		F9512EDF23707CF500A4CA85 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F9512EDE23707CF400A4CA85 /* README.md */; };
 		F9B862CC23CF38FF00571425 /* EyesXCUITestsObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B862CA23CF38FF00571425 /* EyesXCUITestsObjectiveC.m */; };
 		F9B862CD23CF38FF00571425 /* EyesXCUITestsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B862CB23CF38FF00571425 /* EyesXCUITestsSwift.swift */; };
-		F9B862CF23CF393B00571425 /* EyesEarlGreyTestsObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B862CE23CF393B00571425 /* EyesEarlGreyTestsObjectiveC.m */; };
-		F9B862D223CF394300571425 /* EyesEarlGreyTestsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B862D123CF394300571425 /* EyesEarlGreyTestsSwift.swift */; };
-		F9B862D423CF395B00571425 /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B862D323CF395B00571425 /* EarlGrey.swift */; };
 		F9B862D623CF398600571425 /* EyesImagesTestsObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B862D523CF398600571425 /* EyesImagesTestsObjectiveC.m */; };
 		F9B862D923CF398F00571425 /* EyesImagesTestsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B862D823CF398F00571425 /* EyesImagesTestsSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		F9B862A423CF381100571425 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F92F5B882031C8AF003D0001 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F92F5B8F2031C8AF003D0001;
-			remoteInfo = HelloWorldiOS;
-		};
-		F9B862B223CF382700571425 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F92F5B882031C8AF003D0001 /* Project object */;
 			proxyType = 1;
@@ -80,17 +70,11 @@
 		F9512EDE23707CF400A4CA85 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		F9B8629F23CF381100571425 /* EyesXCUITests(UITests).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EyesXCUITests(UITests).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B862A323CF381100571425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9B862AD23CF382700571425 /* EyesEarlGreyTests(UnitTests).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EyesEarlGreyTests(UnitTests).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9B862B123CF382700571425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9B862BB23CF383B00571425 /* EyesImagesTests(UnitTests).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EyesImagesTests(UnitTests).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B862BF23CF383B00571425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9B862C723CF38BC00571425 /* EyesXCUITests(UITests)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyesXCUITests(UITests)-Bridging-Header.h"; sourceTree = "<group>"; };
 		F9B862CA23CF38FF00571425 /* EyesXCUITestsObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyesXCUITestsObjectiveC.m; sourceTree = "<group>"; };
 		F9B862CB23CF38FF00571425 /* EyesXCUITestsSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyesXCUITestsSwift.swift; sourceTree = "<group>"; };
-		F9B862CE23CF393B00571425 /* EyesEarlGreyTestsObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyesEarlGreyTestsObjectiveC.m; sourceTree = "<group>"; };
-		F9B862D023CF394200571425 /* EyesEarlGreyTests(UnitTests)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyesEarlGreyTests(UnitTests)-Bridging-Header.h"; sourceTree = "<group>"; };
-		F9B862D123CF394300571425 /* EyesEarlGreyTestsSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyesEarlGreyTestsSwift.swift; sourceTree = "<group>"; };
-		F9B862D323CF395B00571425 /* EarlGrey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
 		F9B862D523CF398600571425 /* EyesImagesTestsObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyesImagesTestsObjectiveC.m; sourceTree = "<group>"; };
 		F9B862D723CF398E00571425 /* EyesImagesTests(UnitTests)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyesImagesTests(UnitTests)-Bridging-Header.h"; sourceTree = "<group>"; };
 		F9B862D823CF398F00571425 /* EyesImagesTestsSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyesImagesTestsSwift.swift; sourceTree = "<group>"; };
@@ -105,13 +89,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F9B8629C23CF381100571425 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F9B862AA23CF382700571425 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -140,7 +117,6 @@
 			children = (
 				F92F5B922031C8AF003D0001 /* HelloWorldiOS */,
 				F9B862A023CF381100571425 /* EyesXCUITests(UITests) */,
-				F9B862AE23CF382700571425 /* EyesEarlGreyTests(UnitTests) */,
 				F9B862BC23CF383B00571425 /* EyesImagesTests(UnitTests) */,
 				F92F5B912031C8AF003D0001 /* Products */,
 				F928BFA22047107500F96AC2 /* Frameworks */,
@@ -152,7 +128,6 @@
 			children = (
 				F92F5B902031C8AF003D0001 /* HelloWorldiOS.app */,
 				F9B8629F23CF381100571425 /* EyesXCUITests(UITests).xctest */,
-				F9B862AD23CF382700571425 /* EyesEarlGreyTests(UnitTests).xctest */,
 				F9B862BB23CF383B00571425 /* EyesImagesTests(UnitTests).xctest */,
 			);
 			name = Products;
@@ -215,18 +190,6 @@
 			path = "EyesXCUITests(UITests)";
 			sourceTree = "<group>";
 		};
-		F9B862AE23CF382700571425 /* EyesEarlGreyTests(UnitTests) */ = {
-			isa = PBXGroup;
-			children = (
-				F9B862CE23CF393B00571425 /* EyesEarlGreyTestsObjectiveC.m */,
-				F9B862D123CF394300571425 /* EyesEarlGreyTestsSwift.swift */,
-				F9B862D323CF395B00571425 /* EarlGrey.swift */,
-				F9B862B123CF382700571425 /* Info.plist */,
-				F9B862D023CF394200571425 /* EyesEarlGreyTests(UnitTests)-Bridging-Header.h */,
-			);
-			path = "EyesEarlGreyTests(UnitTests)";
-			sourceTree = "<group>";
-		};
 		F9B862BC23CF383B00571425 /* EyesImagesTests(UnitTests) */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,24 +239,6 @@
 			productReference = F9B8629F23CF381100571425 /* EyesXCUITests(UITests).xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		F9B862AC23CF382700571425 /* EyesEarlGreyTests(UnitTests) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F9B862B423CF382700571425 /* Build configuration list for PBXNativeTarget "EyesEarlGreyTests(UnitTests)" */;
-			buildPhases = (
-				F9B862A923CF382700571425 /* Sources */,
-				F9B862AA23CF382700571425 /* Frameworks */,
-				F9B862AB23CF382700571425 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F9B862B323CF382700571425 /* PBXTargetDependency */,
-			);
-			name = "EyesEarlGreyTests(UnitTests)";
-			productName = "EyesEarlGreyTests(UnitTests)";
-			productReference = F9B862AD23CF382700571425 /* EyesEarlGreyTests(UnitTests).xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		F9B862BA23CF383B00571425 /* EyesImagesTests(UnitTests) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9B862C223CF383B00571425 /* Build configuration list for PBXNativeTarget "EyesImagesTests(UnitTests)" */;
@@ -332,12 +277,6 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = F92F5B8F2031C8AF003D0001;
 					};
-					F9B862AC23CF382700571425 = {
-						CreatedOnToolsVersion = 11.2.1;
-						LastSwiftMigration = 1120;
-						ProvisioningStyle = Automatic;
-						TestTargetID = F92F5B8F2031C8AF003D0001;
-					};
 					F9B862BA23CF383B00571425 = {
 						CreatedOnToolsVersion = 11.2.1;
 						LastSwiftMigration = 1120;
@@ -361,7 +300,6 @@
 			targets = (
 				F92F5B8F2031C8AF003D0001 /* HelloWorldiOS */,
 				F9B8629E23CF381100571425 /* EyesXCUITests(UITests) */,
-				F9B862AC23CF382700571425 /* EyesEarlGreyTests(UnitTests) */,
 				F9B862BA23CF383B00571425 /* EyesImagesTests(UnitTests) */,
 			);
 		};
@@ -380,13 +318,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F9B8629D23CF381100571425 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F9B862AB23CF382700571425 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -428,16 +359,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9B862A923CF382700571425 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F9B862D223CF394300571425 /* EyesEarlGreyTestsSwift.swift in Sources */,
-				F9B862CF23CF393B00571425 /* EyesEarlGreyTestsObjectiveC.m in Sources */,
-				F9B862D423CF395B00571425 /* EarlGrey.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F9B862B723CF383B00571425 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -454,11 +375,6 @@
 			isa = PBXTargetDependency;
 			target = F92F5B8F2031C8AF003D0001 /* HelloWorldiOS */;
 			targetProxy = F9B862A423CF381100571425 /* PBXContainerItemProxy */;
-		};
-		F9B862B323CF382700571425 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F92F5B8F2031C8AF003D0001 /* HelloWorldiOS */;
-			targetProxy = F9B862B223CF382700571425 /* PBXContainerItemProxy */;
 		};
 		F9B862C123CF383B00571425 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -662,48 +578,6 @@
 			};
 			name = Release;
 		};
-		F9B862B523CF382700571425 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "EyesEarlGreyTests(UnitTests)/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "Applitools.EyesEarlGreyTests-UnitTests-";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "EyesEarlGreyTests(UnitTests)/EyesEarlGreyTests(UnitTests)-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWorldiOS.app/HelloWorldiOS";
-			};
-			name = Debug;
-		};
-		F9B862B623CF382700571425 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "EyesEarlGreyTests(UnitTests)/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "Applitools.EyesEarlGreyTests-UnitTests-";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "EyesEarlGreyTests(UnitTests)/EyesEarlGreyTests(UnitTests)-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWorldiOS.app/HelloWorldiOS";
-			};
-			name = Release;
-		};
 		F9B862C323CF383B00571425 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -772,15 +646,6 @@
 			buildConfigurations = (
 				F9B862A723CF381100571425 /* Debug */,
 				F9B862A823CF381100571425 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F9B862B423CF382700571425 /* Build configuration list for PBXNativeTarget "EyesEarlGreyTests(UnitTests)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F9B862B523CF382700571425 /* Debug */,
-				F9B862B623CF382700571425 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
