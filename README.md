@@ -1,25 +1,29 @@
-## How To Get Started
-To make any of Applitools SDKs(**EyesXCUI** and **EyesImages**) work, you should install it using Swift Package Manager, [CocoaPods](http://cocoapods.org), or manually.
+# How To Get Started
+To make any of Applitools SDKs (**EyesXCUI**, **EyesImages**) work, you should install it using Swift Package Manager, CocoaPods, or manually.
+
+<br>
 
 
-## Installation with Swift Package Manager
+# Swift Package Manager
 
+1. In Xcode, select "File" -> "Add Packages..."
+2. Enter the URL:
 ##### EyesXCUI
-In Xcode, select File > Add Packages... then add the GitHub URL of `EyesXCUI`:
 ```bash
 https://github.com/applitools/eyes-xcui-swift-package.git
 ```
-Click 'Add Package', then in the Target column select your UI Tests target, then click 'Add Package'.
 
 ##### EyesImages
-In Xcode, select File > Add Packages... then add the GitHub URL of `EyesImages`:
 ```bash
 https://github.com/applitools/eyes-images-swift-package.git
 ```
-Click 'Add Package', then in the Target column select your Unit Tests target, then click 'Add Package'.
+3. Click "Add Package"
+4. In the "Target" column, select your UI Tests target for **EyesXCUI**, or select your Unit Tests target for **EyesImages**.
+5. Click "Add Package".
 
+<br>
 
-## Installation with CocoaPods
+# CocoaPods
 ### Step 1: Install gem
 CocoaPods is distributed as a ruby gem, and is installed by running the following commands in terminal:
 ```bash
@@ -63,22 +67,15 @@ $ pod install
 Close Xcode, and then open your project's `.xcworkspace` file to launch Xcode.
 From this time onwards, you must use the `.xcworkspace` file to open the project.
 
+<br>
 
-## Manual installation
+# Manual installation
 1. Drag-and-drop EyesXCUI.framework to UI test target.
-![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step1-1.png)
-![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step1-2.png)
 
 2. Open project navigator, select UI tests target(where you want to work with EyesXCUI SDK). Select **Build Phases** section.
-![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step2.png)
 
 3. Select **Copy Files** phase(or create if it does not exist by tapping **+** button on the top left corner of Project Navigator).
-![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step3-1.png)
-![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step3-2.png)
 
 4. Tap **+** button on **Copy Files** phase, find and add EyesXCUI.framework.
-![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step4-1.png)
-![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step4-2.png)
 
 5. Change **Destination** value to *Frameworks* on **Copy Files** phase.
-![](https://applitools.bintray.com/Examples/Manual%20Installation%20Guide%20Images/Step5.png)
