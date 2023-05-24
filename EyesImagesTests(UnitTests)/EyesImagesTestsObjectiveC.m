@@ -18,25 +18,27 @@
 }
 
 - (void)testExample {
+    // Initialize the eyes SDK and set your private API key.
     Eyes *eyes = [Eyes new];
     eyes.apiKey = @"<#YOUR_API_KEY#>";
     
     // Start the test
-    [eyes openWithApplicationName:@"Applitools site" testName:@"iOS Screenshot test!"];
+    [eyes openWithApplicationName:@"Hello World iOS" testName:@"iOS Screenshot test!"];
     
-    // Load image
-    NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://applitools.com/blog/wp-content/uploads/2013/11/app-is-live-nov-2013.png"]];
-    UIImage *image = [UIImage imageWithData:imageData];
-    
+    // Create image
+    UIView *view = UIApplication.sharedApplication.keyWindow.rootViewController.view;
+    UIGraphicsImageRendererFormat *format = [UIGraphicsImageRendererFormat new];
+    format.scale = 1;
+    UIGraphicsImageRenderer *renderer = [[UIGraphicsImageRenderer alloc] initWithBounds:view.bounds format:format];
+    UIImage *image = [renderer imageWithActions:^(UIGraphicsImageRendererContext *context) {
+        [view.layer renderInContext:context.CGContext];
+    }];
+
     // Visual validation.
-    [eyes checkImage:image tag:@"Applitools!"];
+    [eyes checkImage:image tag:@"Main Screen"];
     
     // End visual testing.
-    @try {
-        [eyes close:nil];
-    } @finally {
-        [eyes abortIfNotClosed];
-    }
+    [eyes close:nil];
 }
 
 @end
