@@ -1,6 +1,6 @@
 // Licensed under the Applitools SDK License, which can be found here: https://www.applitools.com/eula/sdk
 
-#import <XCTest/XCTest.h>
+@import XCTest;
 @import EyesImages;
 
 @interface EyesImagesTestsObjectiveC : XCTestCase
@@ -26,7 +26,9 @@
     [eyes openWithApplicationName:@"Hello World iOS" testName:@"iOS Screenshot test!"];
     
     // Create image
-    UIView *view = UIApplication.sharedApplication.keyWindow.rootViewController.view;
+    NSPredicate *isKeyWindow = [NSPredicate predicateWithFormat:@"isKeyWindow == YES"];
+    UIWindow *window = [UIApplication.sharedApplication.windows filteredArrayUsingPredicate:isKeyWindow].lastObject;
+    UIView *view = window.rootViewController.view;
     UIGraphicsImageRendererFormat *format = [UIGraphicsImageRendererFormat new];
     format.scale = 1;
     UIGraphicsImageRenderer *renderer = [[UIGraphicsImageRenderer alloc] initWithBounds:view.bounds format:format];

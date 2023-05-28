@@ -3,22 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F92F5B952031C8AF003D0001 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5B942031C8AF003D0001 /* AppDelegate.m */; };
-		F92F5B982031C8AF003D0001 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5B972031C8AF003D0001 /* ViewController.m */; };
+		892B388F2A1E5D1100A8F781 /* EyesXCUI in Frameworks */ = {isa = PBXBuildFile; productRef = 892B388E2A1E5D1100A8F781 /* EyesXCUI */; };
+		892B38922A1F8BB700A8F781 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B38912A1F8BB700A8F781 /* ViewController.swift */; };
+		892B38942A1FAC8500A8F781 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B38932A1FAC8500A8F781 /* AppDelegate.swift */; };
+		892B38962A1FADB100A8F781 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B38952A1FADB100A8F781 /* Model.swift */; };
+		892B38992A1FAF6D00A8F781 /* EyesImages in Frameworks */ = {isa = PBXBuildFile; productRef = 892B38982A1FAF6D00A8F781 /* EyesImages */; };
+		892B38D72A207A2400A8F781 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B38D62A207A2400A8F781 /* SceneDelegate.swift */; };
 		F92F5B9B2031C8AF003D0001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92F5B992031C8AF003D0001 /* Main.storyboard */; };
 		F92F5B9D2031C8AF003D0001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92F5B9C2031C8AF003D0001 /* Assets.xcassets */; };
 		F92F5BA02031C8AF003D0001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92F5B9E2031C8AF003D0001 /* LaunchScreen.storyboard */; };
-		F92F5BA32031C8AF003D0001 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BA22031C8AF003D0001 /* main.m */; };
-		F92F5BCB2031CE6B003D0001 /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BC32031CE6A003D0001 /* BEMCheckBox.m */; };
-		F92F5BCC2031CE6B003D0001 /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BC62031CE6A003D0001 /* BEMPathManager.m */; };
-		F92F5BCD2031CE6B003D0001 /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BC82031CE6B003D0001 /* BEMAnimationManager.m */; };
-		F92F5BCE2031CE6B003D0001 /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BCA2031CE6B003D0001 /* BEMCheckBoxGroup.m */; };
-		F92F5BD92032FBE0003D0001 /* InitialStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BD82032FBE0003D0001 /* InitialStrategy.m */; };
-		F92F5BDC2032FC18003D0001 /* DifferencesStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = F92F5BDB2032FC18003D0001 /* DifferencesStrategy.m */; };
 		F9512EDF23707CF500A4CA85 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F9512EDE23707CF400A4CA85 /* README.md */; };
 		F9B862CC23CF38FF00571425 /* EyesXCUITestsObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B862CA23CF38FF00571425 /* EyesXCUITestsObjectiveC.m */; };
 		F9B862CD23CF38FF00571425 /* EyesXCUITestsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B862CB23CF38FF00571425 /* EyesXCUITestsSwift.swift */; };
@@ -44,29 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		892B38912A1F8BB700A8F781 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		892B38932A1FAC8500A8F781 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		892B38952A1FADB100A8F781 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		892B38D62A207A2400A8F781 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F92F5B902031C8AF003D0001 /* HelloWorldiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorldiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F92F5B932031C8AF003D0001 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F92F5B942031C8AF003D0001 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F92F5B962031C8AF003D0001 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F92F5B972031C8AF003D0001 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F92F5B9A2031C8AF003D0001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F92F5B9C2031C8AF003D0001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F92F5B9F2031C8AF003D0001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F92F5BA12031C8AF003D0001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F92F5BA22031C8AF003D0001 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F92F5BC32031CE6A003D0001 /* BEMCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BEMCheckBox.m; path = HelloWorldiOS/Checkbox/BEMCheckBox.m; sourceTree = SOURCE_ROOT; };
-		F92F5BC42031CE6A003D0001 /* BEMPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BEMPathManager.h; path = HelloWorldiOS/Checkbox/BEMPathManager.h; sourceTree = SOURCE_ROOT; };
-		F92F5BC52031CE6A003D0001 /* BEMCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BEMCheckBox.h; path = HelloWorldiOS/Checkbox/BEMCheckBox.h; sourceTree = SOURCE_ROOT; };
-		F92F5BC62031CE6A003D0001 /* BEMPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BEMPathManager.m; path = HelloWorldiOS/Checkbox/BEMPathManager.m; sourceTree = SOURCE_ROOT; };
-		F92F5BC72031CE6B003D0001 /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BEMCheckBoxGroup.h; path = HelloWorldiOS/Checkbox/BEMCheckBoxGroup.h; sourceTree = SOURCE_ROOT; };
-		F92F5BC82031CE6B003D0001 /* BEMAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BEMAnimationManager.m; path = HelloWorldiOS/Checkbox/BEMAnimationManager.m; sourceTree = SOURCE_ROOT; };
-		F92F5BC92031CE6B003D0001 /* BEMAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BEMAnimationManager.h; path = HelloWorldiOS/Checkbox/BEMAnimationManager.h; sourceTree = SOURCE_ROOT; };
-		F92F5BCA2031CE6B003D0001 /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BEMCheckBoxGroup.m; path = HelloWorldiOS/Checkbox/BEMCheckBoxGroup.m; sourceTree = SOURCE_ROOT; };
-		F92F5BD02032EF9B003D0001 /* Strategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Strategy.h; sourceTree = "<group>"; };
-		F92F5BD72032FBE0003D0001 /* InitialStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitialStrategy.h; sourceTree = "<group>"; };
-		F92F5BD82032FBE0003D0001 /* InitialStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitialStrategy.m; sourceTree = "<group>"; };
-		F92F5BDA2032FC18003D0001 /* DifferencesStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DifferencesStrategy.h; sourceTree = "<group>"; };
-		F92F5BDB2032FC18003D0001 /* DifferencesStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DifferencesStrategy.m; sourceTree = "<group>"; };
 		F9512EDE23707CF400A4CA85 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		F9B8629F23CF381100571425 /* EyesXCUITests(UITests).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EyesXCUITests(UITests).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B862A323CF381100571425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				892B388F2A1E5D1100A8F781 /* EyesXCUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				892B38992A1FAF6D00A8F781 /* EyesImages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,47 +121,17 @@
 		F92F5B922031C8AF003D0001 /* HelloWorldiOS */ = {
 			isa = PBXGroup;
 			children = (
-				F92F5BCF2032EEE1003D0001 /* Strategy */,
-				F92F5BA92031CD99003D0001 /* 3rd Party */,
-				F92F5B932031C8AF003D0001 /* AppDelegate.h */,
-				F92F5B942031C8AF003D0001 /* AppDelegate.m */,
-				F92F5B962031C8AF003D0001 /* ViewController.h */,
-				F92F5B972031C8AF003D0001 /* ViewController.m */,
+				892B38932A1FAC8500A8F781 /* AppDelegate.swift */,
+				892B38D62A207A2400A8F781 /* SceneDelegate.swift */,
+				892B38912A1F8BB700A8F781 /* ViewController.swift */,
+				892B38952A1FADB100A8F781 /* Model.swift */,
 				F92F5B992031C8AF003D0001 /* Main.storyboard */,
 				F92F5B9C2031C8AF003D0001 /* Assets.xcassets */,
 				F92F5B9E2031C8AF003D0001 /* LaunchScreen.storyboard */,
 				F92F5BA12031C8AF003D0001 /* Info.plist */,
-				F92F5BA22031C8AF003D0001 /* main.m */,
 				F9512EDE23707CF400A4CA85 /* README.md */,
 			);
 			path = HelloWorldiOS;
-			sourceTree = "<group>";
-		};
-		F92F5BA92031CD99003D0001 /* 3rd Party */ = {
-			isa = PBXGroup;
-			children = (
-				F92F5BC92031CE6B003D0001 /* BEMAnimationManager.h */,
-				F92F5BC82031CE6B003D0001 /* BEMAnimationManager.m */,
-				F92F5BC52031CE6A003D0001 /* BEMCheckBox.h */,
-				F92F5BC32031CE6A003D0001 /* BEMCheckBox.m */,
-				F92F5BC72031CE6B003D0001 /* BEMCheckBoxGroup.h */,
-				F92F5BCA2031CE6B003D0001 /* BEMCheckBoxGroup.m */,
-				F92F5BC42031CE6A003D0001 /* BEMPathManager.h */,
-				F92F5BC62031CE6A003D0001 /* BEMPathManager.m */,
-			);
-			path = "3rd Party";
-			sourceTree = "<group>";
-		};
-		F92F5BCF2032EEE1003D0001 /* Strategy */ = {
-			isa = PBXGroup;
-			children = (
-				F92F5BD02032EF9B003D0001 /* Strategy.h */,
-				F92F5BD72032FBE0003D0001 /* InitialStrategy.h */,
-				F92F5BD82032FBE0003D0001 /* InitialStrategy.m */,
-				F92F5BDA2032FC18003D0001 /* DifferencesStrategy.h */,
-				F92F5BDB2032FC18003D0001 /* DifferencesStrategy.m */,
-			);
-			path = Strategy;
 			sourceTree = "<group>";
 		};
 		F9B862A023CF381100571425 /* EyesXCUITests(UITests) */ = {
@@ -237,6 +192,9 @@
 				F9B862A523CF381100571425 /* PBXTargetDependency */,
 			);
 			name = "EyesXCUITests(UITests)";
+			packageProductDependencies = (
+				892B388E2A1E5D1100A8F781 /* EyesXCUI */,
+			);
 			productName = "EyesXCUITests(UITests)";
 			productReference = F9B8629F23CF381100571425 /* EyesXCUITests(UITests).xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -255,6 +213,9 @@
 				F9B862C123CF383B00571425 /* PBXTargetDependency */,
 			);
 			name = "EyesImagesTests(UnitTests)";
+			packageProductDependencies = (
+				892B38982A1FAF6D00A8F781 /* EyesImages */,
+			);
 			productName = "EyesImagesTests(UnitTests)";
 			productReference = F9B862BB23CF383B00571425 /* EyesImagesTests(UnitTests).xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -271,6 +232,7 @@
 				TargetAttributes = {
 					F92F5B8F2031C8AF003D0001 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1420;
 						ProvisioningStyle = Automatic;
 					};
 					F9B8629E23CF381100571425 = {
@@ -297,6 +259,8 @@
 			);
 			mainGroup = F92F5B872031C8AF003D0001;
 			packageReferences = (
+				892B388D2A1E5D1100A8F781 /* XCRemoteSwiftPackageReference "eyes-xcui-swift-package" */,
+				892B38972A1FAF6D00A8F781 /* XCRemoteSwiftPackageReference "eyes-images-swift-package" */,
 			);
 			productRefGroup = F92F5B912031C8AF003D0001 /* Products */;
 			projectDirPath = "";
@@ -342,15 +306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F92F5BCC2031CE6B003D0001 /* BEMPathManager.m in Sources */,
-				F92F5B982031C8AF003D0001 /* ViewController.m in Sources */,
-				F92F5BDC2032FC18003D0001 /* DifferencesStrategy.m in Sources */,
-				F92F5BCE2031CE6B003D0001 /* BEMCheckBoxGroup.m in Sources */,
-				F92F5BD92032FBE0003D0001 /* InitialStrategy.m in Sources */,
-				F92F5BA32031C8AF003D0001 /* main.m in Sources */,
-				F92F5B952031C8AF003D0001 /* AppDelegate.m in Sources */,
-				F92F5BCB2031CE6B003D0001 /* BEMCheckBox.m in Sources */,
-				F92F5BCD2031CE6B003D0001 /* BEMAnimationManager.m in Sources */,
+				892B38922A1F8BB700A8F781 /* ViewController.swift in Sources */,
+				892B38942A1FAC8500A8F781 /* AppDelegate.swift in Sources */,
+				892B38962A1FADB100A8F781 /* Model.swift in Sources */,
+				892B38D72A207A2400A8F781 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +391,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -457,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -489,6 +449,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -508,7 +469,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -520,12 +481,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HelloWorldiOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Org.HelloWorldiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -533,24 +507,41 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HelloWorldiOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Org.HelloWorldiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		F9B862A723CF381100571425 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "EyesXCUITests(UITests)/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "Applitools.EyesXCUITests-UITests-";
@@ -566,12 +557,17 @@
 		F9B862A823CF381100571425 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "EyesXCUITests(UITests)/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "Applitools.EyesXCUITests-UITests-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -585,12 +581,18 @@
 		F9B862C323CF383B00571425 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "EyesImagesTests(UnitTests)/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "Applitools.EyesImagesTests-UnitTests-";
@@ -606,12 +608,18 @@
 		F9B862C423CF383B00571425 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "EyesImagesTests(UnitTests)/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "Applitools.EyesImagesTests-UnitTests-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -662,6 +670,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		892B388D2A1E5D1100A8F781 /* XCRemoteSwiftPackageReference "eyes-xcui-swift-package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/applitools/eyes-xcui-swift-package";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		892B38972A1FAF6D00A8F781 /* XCRemoteSwiftPackageReference "eyes-images-swift-package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/applitools/eyes-images-swift-package";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		892B388E2A1E5D1100A8F781 /* EyesXCUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 892B388D2A1E5D1100A8F781 /* XCRemoteSwiftPackageReference "eyes-xcui-swift-package" */;
+			productName = EyesXCUI;
+		};
+		892B38982A1FAF6D00A8F781 /* EyesImages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 892B38972A1FAF6D00A8F781 /* XCRemoteSwiftPackageReference "eyes-images-swift-package" */;
+			productName = EyesImages;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F92F5B882031C8AF003D0001 /* Project object */;
 }

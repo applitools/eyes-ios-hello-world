@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,13 +12,13 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorldiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="II1-X3-Rf2">
-                                <rect key="frame" x="16" y="32" width="343" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HELLO WORLD!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="II1-X3-Rf2">
+                                <rect key="frame" x="16" y="91" width="361" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="uhA-eR-402"/>
                                 </constraints>
@@ -27,7 +27,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to your first Applitools Eyes test!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="40k-Dm-TCa">
-                                <rect key="frame" x="16" y="76" width="343" height="21"/>
+                                <rect key="frame" x="16" y="135" width="361" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="EQH-I9-ZE5"/>
                                 </constraints>
@@ -36,10 +36,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSR-KX-l9M">
-                                <rect key="frame" x="16" y="112" width="343" height="40"/>
+                                <rect key="frame" x="16" y="171" width="361" height="40"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7uT-k8-jBf" customClass="BEMCheckBox">
-                                        <rect key="frame" x="0.0" y="5" width="30" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uT-k8-jBf">
+                                        <rect key="frame" x="0.0" y="5.9999999999999982" width="30" height="28.666666666666664"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <accessibility key="accessibilityConfiguration" label="MakeRandomNumberCheckbox">
                                             <bool key="isElement" value="YES"/>
@@ -48,12 +48,14 @@
                                             <constraint firstAttribute="width" secondItem="7uT-k8-jBf" secondAttribute="height" multiplier="1:1" id="Flf-fx-ywG"/>
                                             <constraint firstAttribute="width" constant="30" id="gL9-3L-XHd"/>
                                         </constraints>
+                                        <state key="normal" backgroundImage="circle" catalog="system"/>
+                                        <state key="selected" backgroundImage="checkmark.circle" catalog="system"/>
                                         <connections>
-                                            <outlet property="delegate" destination="BYZ-38-t0r" id="bZ4-bc-ZLw"/>
+                                            <action selector="didTapGenerateRandomNumberWithCheckbox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DCY-fW-8jx"/>
                                         </connections>
-                                    </view>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make the number below random." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="UkJ-6a-1uC">
-                                        <rect key="frame" x="44" y="10" width="299" height="20.5"/>
+                                        <rect key="frame" x="44" y="9.6666666666666572" width="317" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="250" constant="40" id="wEn-sP-LLP"/>
                                         </constraints>
@@ -73,10 +75,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRb-QG-h0z">
-                                <rect key="frame" x="16" y="157" width="343" height="40"/>
+                                <rect key="frame" x="16" y="216" width="361" height="40"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qaA-5T-MLw" customClass="BEMCheckBox">
-                                        <rect key="frame" x="0.0" y="5" width="30" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaA-5T-MLw">
+                                        <rect key="frame" x="0.0" y="5.9999999999999982" width="30" height="28.666666666666664"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <accessibility key="accessibilityConfiguration" label="SimulateDiffsCheckbox">
                                             <bool key="isElement" value="YES"/>
@@ -85,17 +87,19 @@
                                             <constraint firstAttribute="width" constant="30" id="tsY-RN-YrZ"/>
                                             <constraint firstAttribute="width" secondItem="qaA-5T-MLw" secondAttribute="height" multiplier="1:1" id="zOP-99-CZv"/>
                                         </constraints>
+                                        <state key="normal" backgroundImage="circle" catalog="system"/>
+                                        <state key="selected" backgroundImage="checkmark.circle" catalog="system"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="0.0"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <outlet property="delegate" destination="BYZ-38-t0r" id="ybc-sF-hwQ"/>
+                                            <action selector="didTapSimulateDifferencesWithCheckbox:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HjV-9m-Dbe"/>
                                         </connections>
-                                    </view>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simulate additional differences." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="CCG-0K-w0e">
-                                        <rect key="frame" x="44" y="10" width="299" height="20.5"/>
+                                        <rect key="frame" x="44" y="9.6666666666666572" width="317" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="250" constant="20.5" id="BEo-wD-c7J"/>
                                         </constraints>
@@ -114,8 +118,8 @@
                                     <constraint firstAttribute="height" priority="750" constant="40" id="ylg-KF-09j"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNz-Ao-BEk">
-                                <rect key="frame" x="16" y="217" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123456" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNz-Ao-BEk">
+                                <rect key="frame" x="16" y="276" width="361" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Hft-Ci-u9i"/>
                                 </constraints>
@@ -124,22 +128,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCy-YS-acL">
-                                <rect key="frame" x="155.5" y="258" width="64" height="30"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="146.66666666666666" y="317" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.59607843137254901" green="0.66666666666666663" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="CQ9-J2-TTa"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="Gx2-iA-Mzw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Gx2-iA-Mzw"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Click me!"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="clickMeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gMH-QK-DJY"/>
+                                    <action selector="clickMeButtonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iE1-0P-u3F"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFW-2Y-e9k" userLabel="Containter">
-                                <rect key="frame" x="16" y="298" width="343" height="100"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFW-2Y-e9k" userLabel="Container">
+                                <rect key="frame" x="16" y="357" width="361" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You successfully clicked the button!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjF-cj-jOQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="21"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="BottomLabel"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="BDG-h5-c7T"/>
                                         </constraints>
@@ -148,8 +159,8 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lih-lF-7aR">
-                                        <rect key="frame" x="115" y="35" width="113" height="65"/>
-                                        <accessibility key="accessibilityConfiguration" label="ThumbUpOrBugImageView">
+                                        <rect key="frame" x="124" y="35" width="113" height="65"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="BottomImage" label="ThumbUpOrBugImageView">
                                             <bool key="isElement" value="YES"/>
                                         </accessibility>
                                         <constraints>
@@ -159,6 +170,7 @@
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="BottomContainer"/>
                                 <constraints>
                                     <constraint firstItem="gjF-cj-jOQ" firstAttribute="top" secondItem="pFW-2Y-e9k" secondAttribute="top" id="9Ri-Gd-FuI"/>
                                     <constraint firstItem="Lih-lF-7aR" firstAttribute="top" secondItem="gjF-cj-jOQ" secondAttribute="bottom" constant="14" id="AWX-vy-XFP"/>
@@ -196,15 +208,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bottomContainer" destination="pFW-2Y-e9k" id="5RZ-cK-xUU"/>
-                        <outlet property="buttonClickedLable" destination="gjF-cj-jOQ" id="o4Q-4h-RY4"/>
-                        <outlet property="clickMeButton" destination="tCy-YS-acL" id="AA7-ht-Svy"/>
-                        <outlet property="clickMeButtonCenterXLayout" destination="OOS-3r-36R" id="5wj-7Y-w9Q"/>
-                        <outlet property="generateRandomNumberCheckbox" destination="7uT-k8-jBf" id="5nb-qB-3E0"/>
-                        <outlet property="helloLable" destination="II1-X3-Rf2" id="CAV-Ax-t2p"/>
-                        <outlet property="imageView" destination="Lih-lF-7aR" id="VLM-3q-xVU"/>
-                        <outlet property="randomNumberLabel" destination="QNz-Ao-BEk" id="FcT-Dy-Nx0"/>
-                        <outlet property="simulateDifferencesCheckbox" destination="qaA-5T-MLw" id="9Ef-t3-aKm"/>
+                        <outlet property="bottomContainer" destination="pFW-2Y-e9k" id="32n-Cw-Shh"/>
+                        <outlet property="clickMeButtonCenterXLayout" destination="OOS-3r-36R" id="Pw7-ux-lZ0"/>
+                        <outlet property="helloLabel" destination="II1-X3-Rf2" id="r79-cp-euD"/>
+                        <outlet property="imageView" destination="Lih-lF-7aR" id="hMr-GQ-d3Y"/>
+                        <outlet property="randomNumberLabel" destination="QNz-Ao-BEk" id="8Dz-qF-SZk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -212,15 +220,9 @@
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="7uT-k8-jBf">
-            <size key="intrinsicContentSize" width="30" height="30"/>
-        </designable>
-        <designable name="qaA-5T-MLw">
-            <size key="intrinsicContentSize" width="30" height="30"/>
-        </designable>
-    </designables>
     <resources>
+        <image name="checkmark.circle" catalog="system" width="128" height="123"/>
+        <image name="circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

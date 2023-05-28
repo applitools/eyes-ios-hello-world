@@ -22,7 +22,7 @@ class EyesImagesTestsSwift: XCTestCase {
         eyes.open(withApplicationName: "Hello World iOS", testName: "iOS Screenshot test!")
 
         // Create image
-        let view = try XCTUnwrap(UIApplication.shared.keyWindow?.rootViewController?.view)
+        let view = try XCTUnwrap(UIApplication.shared.windows.last(where: \.isKeyWindow)?.rootViewController?.view)
         let format = UIGraphicsImageRendererFormat(for: .init(displayScale: 1))
         let image = UIGraphicsImageRenderer(bounds: view.bounds, format: format).image {
             view.layer.render(in: $0.cgContext)
