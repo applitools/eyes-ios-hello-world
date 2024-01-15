@@ -10,6 +10,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var bottomContainer: UIView!
     @IBOutlet weak var imageView: UIImageView!
 
+    @IBOutlet weak var simulateButton: UIButton!
+    
     private var model = Model()
     private var clickMeContentShown = false {
         didSet {
@@ -28,8 +30,8 @@ class ViewController: UIViewController {
         updateNumberLabel()
     }
 
-    @IBAction func didTapSimulateDifferences(checkbox: UIButton) {
-        checkbox.isSelected.toggle()
+    @IBAction func didTapSimulateDifferences(checkbox: UIButton? = nil) {
+        simulateButton.isSelected.toggle()
         model.hasDifferences.toggle()
         clickMeContentShown = false
         updateContent()

@@ -2,6 +2,7 @@
 
 import XCTest
 import EyesImages
+@testable import HelloWorldiOS
 
 class EyesImagesTestsSwift: XCTestCase {
 
@@ -21,6 +22,25 @@ class EyesImagesTestsSwift: XCTestCase {
         // Start the test
         eyes.open(withApplicationName: "Hello World iOS", testName: "iOS Screenshot test!")
 
+        // Uncomment the following section on a second run, to simulate a difference
+        /*
+        let window = try XCTUnwrap(UIApplication.shared.windows.last(where: \.isKeyWindow))
+
+        let viewController = window.rootViewController as? ViewController
+        viewController?.didTapSimulateDifferences()
+        */
+
+        let image = try takeWindowScreenshot()
+        
+        // Visual validation.
+        eyes.check(image, tag: "Main Screen")
+
+        // End visual testing.
+        let results = try eyes.close()
+        print(results)
+    }
+
+    func takeWindowScreenshot() throws -> UIImage {
         // Create image
         let view = try XCTUnwrap(UIApplication.shared.windows.last(where: \.isKeyWindow))
         let format = UIGraphicsImageRendererFormat(for: .init(displayScale: 1))
@@ -28,11 +48,6 @@ class EyesImagesTestsSwift: XCTestCase {
             view.layer.render(in: $0.cgContext)
         }
 
-        // Visual validation.
-        eyes.check(image, tag: "Main Screen")
-
-        // End visual testing.
-        try eyes.close()
+        return image
     }
-
 }
