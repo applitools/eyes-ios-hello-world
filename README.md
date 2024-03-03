@@ -1,5 +1,5 @@
 # How To Get Started
-To make any of Applitools SDKs (**EyesXCUI**, **EyesImages**) work, you should install it using Swift Package Manager, CocoaPods, or manually.
+To make any of Applitools SDKs (**EyesXCUI**, **EyesImages**) work, you should install it using Swift Package Manager, or manually.
 
 <br>
 
@@ -23,51 +23,6 @@ https://github.com/applitools/eyes-images-swift-package.git
 
 <br>
 
-# CocoaPods
-### Step 1: Install gem
-CocoaPods is distributed as a ruby gem, and is installed by running the following commands in terminal:
-```bash
-$ gem install cocoapods
-```
-
-### Step 2: Create a Podfile
-Open a terminal window, and $ cd into your project directory. Then, run the following command:
-
-```bash
-$ pod init
-```
-
-### Step 3: Edit the Podfile
-Specify it in your `Podfile`:
-##### EyesXCUI
-```ruby
-target 'APPLICATION_TARGET_NAME' do
-  target 'UI_TESTING_TARGET_NAME' do
-    pod 'EyesXCUI'
-  end
-end
-```
-##### EyesImages
-```ruby
-target 'APPLICATION_TARGET_NAME' do
-  target 'UNIT_TESTING_TARGET_NAME' do
-  pod 'EyesImages'
-  end
-end
-```
-
-Save your `Podfile`.
-
-### Step 4: Install dependencies
-Run the following command in the terminal window:
-```bash
-$ pod install
-```
-
-Close Xcode, and then open your project's `.xcworkspace` file to launch Xcode.
-From this time onwards, you must use the `.xcworkspace` file to open the project.
-
-<br>
 
 # Manual installation
 1. Drag-and-drop EyesXCUI.framework to UI test target.
