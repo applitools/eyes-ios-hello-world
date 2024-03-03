@@ -33,10 +33,11 @@ class EyesImagesTestsSwift: XCTestCase {
         let image = try takeWindowScreenshot()
         
         // Visual validation.
-        eyes.check(image, tag: "Main Screen")
+        eyes.check(withTag: "Main Screen", andSettings: Target.image(image))
 
         // End visual testing.
-        let results = try eyes.close()
+        eyes.closeAsync()
+        let results = eyes.getAllTestResults()
         print(results)
     }
 
