@@ -4,7 +4,7 @@ import XCTest
 import EyesImages
 @testable import HelloWorldiOS
 
-class EyesImagesTestsSwift: XCTestCase {
+class EyesImagesTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -22,14 +22,10 @@ class EyesImagesTestsSwift: XCTestCase {
         // Start the test
         eyes.open(withApplicationName: "Hello World iOS", testName: "iOS Screenshot test!")
 
-        // Uncomment the following section on a second run, to simulate a difference
-        /*
-        let window = try XCTUnwrap(UIApplication.shared.windows.last(where: \.isKeyWindow))
+        // Uncomment the following line on a second run, to simulate a difference
+        // try viewController().didTapSimulateDifferences()
 
-        let viewController = window.rootViewController as? ViewController
-        viewController?.didTapSimulateDifferences()
-        */
-
+        // Create the image
         let image = try takeWindowScreenshot()
         
         // Visual validation.
@@ -41,14 +37,18 @@ class EyesImagesTestsSwift: XCTestCase {
         print(results)
     }
 
-    func takeWindowScreenshot() throws -> UIImage {
-        // Create image
-        let view = try XCTUnwrap(UIApplication.shared.windows.last(where: \.isKeyWindow))
-        let format = UIGraphicsImageRendererFormat(for: .init(displayScale: 1))
-        let image = UIGraphicsImageRenderer(bounds: view.bounds, format: format).image {
-            view.layer.render(in: $0.cgContext)
-        }
+}
 
-        return image
+// Image creation helper functions
+private extension EyesImagesTests {
+    func takeWindowScreenshot() throws -> UIImage { try keyWindow().scaledImage() }
+    func keyWindow() throws -> UIWindow { try XCTUnwrap(UIApplication.shared.windows.last(where: \.isKeyWindow)) }
+    func viewController() throws -> ViewController { try XCTUnwrap(keyWindow().rootViewController as? ViewController) }
+}
+
+private extension UIView {
+    func scaledImage() -> UIImage {
+        UIGraphicsImageRenderer(bounds: bounds, format: UIGraphicsImageRendererFormat(for: .init(displayScale: 1)))
+            .image { layer.render(in: $0.cgContext) }
     }
 }

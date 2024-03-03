@@ -4,7 +4,7 @@ import XCTest
 import EyesXCUI
 
 
-class EyesXCUITestsSwift: XCTestCase {
+class EyesXCUITests: XCTestCase {
     
     let application = XCUIApplication()
     let eyes = Eyes()

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,10 +17,8 @@
 		F92F5B9D2031C8AF003D0001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92F5B9C2031C8AF003D0001 /* Assets.xcassets */; };
 		F92F5BA02031C8AF003D0001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92F5B9E2031C8AF003D0001 /* LaunchScreen.storyboard */; };
 		F9512EDF23707CF500A4CA85 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F9512EDE23707CF400A4CA85 /* README.md */; };
-		F9B862CC23CF38FF00571425 /* EyesXCUITestsObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B862CA23CF38FF00571425 /* EyesXCUITestsObjectiveC.m */; };
-		F9B862CD23CF38FF00571425 /* EyesXCUITestsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B862CB23CF38FF00571425 /* EyesXCUITestsSwift.swift */; };
-		F9B862D623CF398600571425 /* EyesImagesTestsObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B862D523CF398600571425 /* EyesImagesTestsObjectiveC.m */; };
-		F9B862D923CF398F00571425 /* EyesImagesTestsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B862D823CF398F00571425 /* EyesImagesTestsSwift.swift */; };
+		F9B862CD23CF38FF00571425 /* EyesXCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B862CB23CF38FF00571425 /* EyesXCUITests.swift */; };
+		F9B862D923CF398F00571425 /* EyesImagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B862D823CF398F00571425 /* EyesImagesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +53,8 @@
 		F9B862A323CF381100571425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9B862BB23CF383B00571425 /* EyesImagesTests(UnitTests).xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EyesImagesTests(UnitTests).xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B862BF23CF383B00571425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9B862C723CF38BC00571425 /* EyesXCUITests(UITests)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyesXCUITests(UITests)-Bridging-Header.h"; sourceTree = "<group>"; };
-		F9B862CA23CF38FF00571425 /* EyesXCUITestsObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyesXCUITestsObjectiveC.m; sourceTree = "<group>"; };
-		F9B862CB23CF38FF00571425 /* EyesXCUITestsSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyesXCUITestsSwift.swift; sourceTree = "<group>"; };
-		F9B862D523CF398600571425 /* EyesImagesTestsObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EyesImagesTestsObjectiveC.m; sourceTree = "<group>"; };
-		F9B862D723CF398E00571425 /* EyesImagesTests(UnitTests)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyesImagesTests(UnitTests)-Bridging-Header.h"; sourceTree = "<group>"; };
-		F9B862D823CF398F00571425 /* EyesImagesTestsSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyesImagesTestsSwift.swift; sourceTree = "<group>"; };
+		F9B862CB23CF38FF00571425 /* EyesXCUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyesXCUITests.swift; sourceTree = "<group>"; };
+		F9B862D823CF398F00571425 /* EyesImagesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyesImagesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,10 +131,8 @@
 		F9B862A023CF381100571425 /* EyesXCUITests(UITests) */ = {
 			isa = PBXGroup;
 			children = (
-				F9B862CA23CF38FF00571425 /* EyesXCUITestsObjectiveC.m */,
-				F9B862CB23CF38FF00571425 /* EyesXCUITestsSwift.swift */,
+				F9B862CB23CF38FF00571425 /* EyesXCUITests.swift */,
 				F9B862A323CF381100571425 /* Info.plist */,
-				F9B862C723CF38BC00571425 /* EyesXCUITests(UITests)-Bridging-Header.h */,
 			);
 			path = "EyesXCUITests(UITests)";
 			sourceTree = "<group>";
@@ -148,10 +140,8 @@
 		F9B862BC23CF383B00571425 /* EyesImagesTests(UnitTests) */ = {
 			isa = PBXGroup;
 			children = (
-				F9B862D523CF398600571425 /* EyesImagesTestsObjectiveC.m */,
-				F9B862D823CF398F00571425 /* EyesImagesTestsSwift.swift */,
+				F9B862D823CF398F00571425 /* EyesImagesTests.swift */,
 				F9B862BF23CF383B00571425 /* Info.plist */,
-				F9B862D723CF398E00571425 /* EyesImagesTests(UnitTests)-Bridging-Header.h */,
 			);
 			path = "EyesImagesTests(UnitTests)";
 			sourceTree = "<group>";
@@ -317,8 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9B862CD23CF38FF00571425 /* EyesXCUITestsSwift.swift in Sources */,
-				F9B862CC23CF38FF00571425 /* EyesXCUITestsObjectiveC.m in Sources */,
+				F9B862CD23CF38FF00571425 /* EyesXCUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,8 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9B862D623CF398600571425 /* EyesImagesTestsObjectiveC.m in Sources */,
-				F9B862D923CF398F00571425 /* EyesImagesTestsSwift.swift in Sources */,
+				F9B862D923CF398F00571425 /* EyesImagesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +534,6 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "Applitools.EyesXCUITests-UITests-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "EyesXCUITests(UITests)/EyesXCUITests(UITests)-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -571,7 +558,6 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "Applitools.EyesXCUITests-UITests-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "EyesXCUITests(UITests)/EyesXCUITests(UITests)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = HelloWorldiOS;
@@ -597,7 +583,6 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "Applitools.EyesImagesTests-UnitTests-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "EyesImagesTests(UnitTests)/EyesImagesTests(UnitTests)-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -623,7 +608,6 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "Applitools.EyesImagesTests-UnitTests-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "EyesImagesTests(UnitTests)/EyesImagesTests(UnitTests)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWorldiOS.app/HelloWorldiOS";
@@ -676,8 +660,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/applitools/eyes-xcui-swift-package";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 8.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 		892B38972A1FAF6D00A8F781 /* XCRemoteSwiftPackageReference "eyes-images-swift-package" */ = {
