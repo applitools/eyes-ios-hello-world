@@ -20,7 +20,12 @@ class EyesImagesTests: XCTestCase {
         eyes.apiKey = <#YOUR_API_KEY#>
 
         // Start the test
-        eyes.open(withApplicationName: "Hello World iOS", testName: "iOS Screenshot test!")
+#if os(visionOS)
+        let OS = "visionOS"
+#else
+        let OS = "iOS"
+#endif
+        eyes.open(withApplicationName: "Hello World \(OS)", testName: "\(OS) Screenshot test!")
 
         // Uncomment the following line on a second run, to simulate a difference
         // try viewController().didTapSimulateDifferences()
@@ -46,9 +51,25 @@ private extension EyesImagesTests {
     func viewController() throws -> ViewController { try XCTUnwrap(keyWindow().rootViewController as? ViewController) }
 }
 
-private extension UIView {
+private extension UIWindow {
     func scaledImage() -> UIImage {
-        UIGraphicsImageRenderer(bounds: bounds, format: UIGraphicsImageRendererFormat(for: .init(displayScale: 1)))
-            .image { layer.render(in: $0.cgContext) }
+        let size = bounds.size
+        UIGraphicsBeginImageContextWithOptions(size, false, 1)
+#if os(visionOS)
+        let context = UIGraphicsGetCurrentContext()
+        context?.setFillColor(gray: 0.5, alpha: 1)
+        context?.fill([CGRect(origin: .zero, size: size)])
+#endif
+        let rect = CGRect(origin: .zero, size: size)
+        let remoteKeyboardWindowClass: AnyClass? = NSClassFromString("UIRemoteKeyboardWindow")
+        for window in self.windowScene!.windows {
+            if let klass = remoteKeyboardWindowClass, window.isKind(of: klass) {
+                continue
+            }
+            window.drawHierarchy(in: rect, afterScreenUpdates: true)
+        }
+        let image = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return image
     }
 }
