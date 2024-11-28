@@ -5,6 +5,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var helloLabel: UILabel!
+    @IBOutlet weak var randomCheckbox: UIButton!
     @IBOutlet weak var randomNumberLabel: UILabel!
     @IBOutlet weak var clickMeButtonCenterXLayout: NSLayoutConstraint!
     @IBOutlet weak var bottomContainer: UIView!
@@ -24,8 +25,8 @@ class ViewController: UIViewController {
         updateContent()
     }
 
-    @IBAction func didTapGenerateRandomNumber(checkbox: UIButton) {
-        checkbox.isSelected.toggle()
+    @IBAction func didTapGenerateRandomNumber(checkbox: UIButton? = nil) {
+        randomCheckbox.isSelected.toggle()
         model.isNumberRandom.toggle()
         updateNumberLabel()
     }

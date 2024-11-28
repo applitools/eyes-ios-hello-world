@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8919EE9D2CF89436001051BA /* EyesImages in Frameworks */ = {isa = PBXBuildFile; productRef = 8919EE9C2CF89436001051BA /* EyesImages */; };
 		892B388F2A1E5D1100A8F781 /* EyesXCUI in Frameworks */ = {isa = PBXBuildFile; productRef = 892B388E2A1E5D1100A8F781 /* EyesXCUI */; };
 		892B38922A1F8BB700A8F781 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B38912A1F8BB700A8F781 /* ViewController.swift */; };
 		892B38942A1FAC8500A8F781 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B38932A1FAC8500A8F781 /* AppDelegate.swift */; };
 		892B38962A1FADB100A8F781 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B38952A1FADB100A8F781 /* Model.swift */; };
-		892B38992A1FAF6D00A8F781 /* EyesImages in Frameworks */ = {isa = PBXBuildFile; productRef = 892B38982A1FAF6D00A8F781 /* EyesImages */; };
 		892B38D72A207A2400A8F781 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892B38D62A207A2400A8F781 /* SceneDelegate.swift */; };
 		F92F5B9B2031C8AF003D0001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92F5B992031C8AF003D0001 /* Main.storyboard */; };
 		F92F5B9D2031C8AF003D0001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92F5B9C2031C8AF003D0001 /* Assets.xcassets */; };
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				892B38992A1FAF6D00A8F781 /* EyesImages in Frameworks */,
+				8919EE9D2CF89436001051BA /* EyesImages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +204,7 @@
 			);
 			name = "EyesImagesTests(UnitTests)";
 			packageProductDependencies = (
-				892B38982A1FAF6D00A8F781 /* EyesImages */,
+				8919EE9C2CF89436001051BA /* EyesImages */,
 			);
 			productName = "EyesImagesTests(UnitTests)";
 			productReference = F9B862BB23CF383B00571425 /* EyesImagesTests(UnitTests).xctest */;
@@ -250,7 +250,7 @@
 			mainGroup = F92F5B872031C8AF003D0001;
 			packageReferences = (
 				892B388D2A1E5D1100A8F781 /* XCRemoteSwiftPackageReference "eyes-xcui-swift-package" */,
-				892B38972A1FAF6D00A8F781 /* XCRemoteSwiftPackageReference "eyes-images-swift-package" */,
+				8919EE9B2CF89436001051BA /* XCRemoteSwiftPackageReference "eyes-images-swift-package" */,
 			);
 			productRefGroup = F92F5B912031C8AF003D0001 /* Products */;
 			projectDirPath = "";
@@ -660,6 +660,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8919EE9B2CF89436001051BA /* XCRemoteSwiftPackageReference "eyes-images-swift-package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/applitools/eyes-images-swift-package.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		892B388D2A1E5D1100A8F781 /* XCRemoteSwiftPackageReference "eyes-xcui-swift-package" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/applitools/eyes-xcui-swift-package";
@@ -668,26 +676,18 @@
 				kind = branch;
 			};
 		};
-		892B38972A1FAF6D00A8F781 /* XCRemoteSwiftPackageReference "eyes-images-swift-package" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/applitools/eyes-images-swift-package";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8919EE9C2CF89436001051BA /* EyesImages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8919EE9B2CF89436001051BA /* XCRemoteSwiftPackageReference "eyes-images-swift-package" */;
+			productName = EyesImages;
+		};
 		892B388E2A1E5D1100A8F781 /* EyesXCUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 892B388D2A1E5D1100A8F781 /* XCRemoteSwiftPackageReference "eyes-xcui-swift-package" */;
 			productName = EyesXCUI;
-		};
-		892B38982A1FAF6D00A8F781 /* EyesImages */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 892B38972A1FAF6D00A8F781 /* XCRemoteSwiftPackageReference "eyes-images-swift-package" */;
-			productName = EyesImages;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

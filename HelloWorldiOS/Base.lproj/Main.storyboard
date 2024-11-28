@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <deployment version="5888" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -39,7 +39,7 @@
                                 <rect key="frame" x="16" y="171" width="361" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uT-k8-jBf">
-                                        <rect key="frame" x="0.0" y="5.9999999999999982" width="30" height="28.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="5.6666666666666661" width="30" height="28.666666666666671"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <accessibility key="accessibilityConfiguration" label="MakeRandomNumberCheckbox">
                                             <bool key="isElement" value="YES"/>
@@ -78,7 +78,7 @@
                                 <rect key="frame" x="16" y="216" width="361" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaA-5T-MLw">
-                                        <rect key="frame" x="0.0" y="5.9999999999999982" width="30" height="28.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="5.6666666666666661" width="30" height="28.666666666666671"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <accessibility key="accessibilityConfiguration" label="SimulateDiffsCheckbox">
                                             <bool key="isElement" value="YES"/>
@@ -212,6 +212,7 @@
                         <outlet property="clickMeButtonCenterXLayout" destination="OOS-3r-36R" id="Pw7-ux-lZ0"/>
                         <outlet property="helloLabel" destination="II1-X3-Rf2" id="r79-cp-euD"/>
                         <outlet property="imageView" destination="Lih-lF-7aR" id="hMr-GQ-d3Y"/>
+                        <outlet property="randomCheckbox" destination="7uT-k8-jBf" id="hiK-v0-455"/>
                         <outlet property="randomNumberLabel" destination="QNz-Ao-BEk" id="8Dz-qF-SZk"/>
                         <outlet property="simulateButton" destination="qaA-5T-MLw" id="EpP-PW-xdm"/>
                     </connections>

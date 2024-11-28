@@ -4,72 +4,52 @@ import XCTest
 import EyesImages
 @testable import HelloWorldiOS
 
-class EyesImagesTests: XCTestCase {
+@MainActor class EyesImagesTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var viewController: ViewController!
+
+    /* Initialize the Eyes SDK */
+
+    static let eyes = Eyes()
+    var eyes: Eyes { Self.eyes }
+    static let batch: BatchInfo = .init(name: "HelloWorld / XCTest")
+
+    override class func setUp() {
+        let configuration = Configuration()
+        configuration.batch = batch
+        configuration.apiKey =  <#YOUR_API_KEY#>  /* Set your private API key */
+
+        /* Optionally, add a device target to render, independently of the actual simulator or device the test runs on. */
+        //         configuration.addMultiDeviceTarget(IosMultiDeviceTarget.iPhone12())
+
+        eyes.configuration = configuration
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    override func setUp() async throws {
+        /* Setup your view controller */
+
+        viewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() as? ViewController
+        let window = try XCTUnwrap((UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.last)
+        window.rootViewController = viewController
     }
 
-    func testExample() throws {
-        // Initialize the eyes SDK and set your private API key.
-        let eyes = Eyes()
-        eyes.apiKey = <#YOUR_API_KEY#>
 
-        // Start the test
-#if os(visionOS)
-        let OS = "visionOS"
-#else
-        let OS = "iOS"
-#endif
-        eyes.open(withApplicationName: "Hello World \(OS)", testName: "\(OS) Screenshot test!")
+    func testMainScreen() async throws {
+        /* Uncomment the following line on a second run, to simulate a difference */
+//        viewController.didTapSimulateDifferences()
 
-        // Uncomment the following line on a second run, to simulate a difference
-        // try viewController().didTapSimulateDifferences()
-
-        // Create the image
-        let image = try takeWindowScreenshot()
-        
-        // Visual validation.
-        eyes.check(withTag: "Main Screen", andSettings: Target.image(image))
-
-        // End visual testing.
-        eyes.closeAsync()
-        let results = eyes.getAllTestResults()
-        print(results)
+        try await eyes.test(settings: Target.window())
     }
 
-}
+    func testRandomNumber() async throws {
+        viewController.didTapGenerateRandomNumber()
 
-// Image creation helper functions
-private extension EyesImagesTests {
-    func takeWindowScreenshot() throws -> UIImage { try keyWindow().scaledImage() }
-    func keyWindow() throws -> UIWindow { try XCTUnwrap(UIApplication.shared.windows.last(where: \.isKeyWindow)) }
-    func viewController() throws -> ViewController { try XCTUnwrap(keyWindow().rootViewController as? ViewController) }
-}
+        var viewsToIgnore: [UIView] = []
 
-private extension UIWindow {
-    func scaledImage() -> UIImage {
-        let size = bounds.size
-        UIGraphicsBeginImageContextWithOptions(size, false, 1)
-#if os(visionOS)
-        let context = UIGraphicsGetCurrentContext()
-        context?.setFillColor(gray: 0.5, alpha: 1)
-        context?.fill([CGRect(origin: .zero, size: size)])
-#endif
-        let rect = CGRect(origin: .zero, size: size)
-        let remoteKeyboardWindowClass: AnyClass? = NSClassFromString("UIRemoteKeyboardWindow")
-        for window in self.windowScene!.windows {
-            if let klass = remoteKeyboardWindowClass, window.isKind(of: klass) {
-                continue
-            }
-            window.drawHierarchy(in: rect, afterScreenUpdates: true)
-        }
-        let image = UIGraphicsGetImageFromCurrentImageContext()!
-        UIGraphicsEndImageContext()
-        return image
+        /* Uncomment the following line on a third run, to ignore the difference */
+//        viewsToIgnore.append(viewController.randomNumberLabel)
+
+        try await eyes.test(settings: Target.window().ignore(viewsToIgnore))
     }
+
 }
