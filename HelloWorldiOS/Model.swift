@@ -17,7 +17,7 @@ struct Model {
         isNumberRandom ? (arc4random() % (999999 - 100000) + 100000) : 123456
     }
 
-    var clickMeButtonCenterXLayoutValue: CGFloat {
+    var tapMeButtonCenterXLayoutValue: CGFloat {
         hasDifferences ? 50 : 0
     }
 

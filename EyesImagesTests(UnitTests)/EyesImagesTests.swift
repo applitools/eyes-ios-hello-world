@@ -46,10 +46,27 @@ import EyesImages
 
         var viewsToIgnore: [UIView] = []
 
-        /* Uncomment the following line on a third run, to ignore the difference */
+        /* Run once to create a baseline, a second time to generate a checkpoint with a difference,
+         then uncomment the following line on a 3rd run to ignore the difference */
 //        viewsToIgnore.append(viewController.randomNumberLabel)
 
         try await eyes.test(settings: Target.window().ignore(viewsToIgnore))
     }
 
+    /*
+     eyes.test() performs one visual validation, wrapped in a concise API that automatically creates a test.
+     When more steps are needed, use eyes.open(), eyes.check() for each step, then eyes.close().
+     */
+    func testTwoSteps() async throws {
+        /* Create the test */
+        eyes.open(withApplicationName: "HelloWorld", testName: "Two steps")
+
+        /* Perform two checks */
+        try await eyes.check(withTag: "Before tap", andSettings: Target.window())
+        viewController.tapMeButtonTapped(sender: nil)
+        try await eyes.check(withTag: "After tap", andSettings: Target.window())
+
+        /* Validate and close the test */
+        try eyes.close()
+    }
 }

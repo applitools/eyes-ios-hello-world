@@ -32,13 +32,13 @@ class EyesXCUITests: XCTestCase {
         // Visual checkpoint #1.
         eyes.check(withTag: "Hello", andSettings: Target.window().timeout(inSeconds: 5))
         
-        let clickMeButton = application.buttons["Click me!"]
-        // Click the "Click me!" button.
-        clickMeButton.tap()
+        let tapMeButton = application.buttons["Tap me!"]
+        // Tap the "Tap me!" button.
+        tapMeButton.tap()
 
         // Visual checkpoint #2.
-        eyes.check(withTag: "Click!", andSettings: Target.window())
-        
+        eyes.check(withTag: "Tap!", andSettings: Target.window())
+
         let thumbUpOrBugImageView = application.images["ThumbUpOrBugImageView"]
         
         // Visual checkpoint #3
@@ -50,8 +50,8 @@ class EyesXCUITests: XCTestCase {
         // Visual checkpoint #4.
         eyes.check(withTag: "Simulate Differences!", andSettings: Target.window())
         
-        // Click the "Click me!" button.
-        clickMeButton.tap()
+        // Tap the "Tap me!" button.
+        tapMeButton.tap()
 
         // Visual checkpoint #5.
         eyes.check(withTag: "Bug has been found!", andSettings: Target.window())
